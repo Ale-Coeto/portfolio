@@ -7,12 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'custom-dark-gray': '#1c1e24',
+        'custom-light-gray': '#2b313a',
+        'custom-green': '#1ad499',
+        'custom-text-gray' : '#BBBBBB',
+        'custom-text-dark-gray' : '#7A7A7A',
       },
+      fontFamily: {
+        'fira-code': ['Fira Code', 'monospace'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'nunito': ['Nunito', 'sans-serif'],
+      }
     },
+
   },
   plugins: [],
 }

@@ -1,0 +1,45 @@
+
+const usePLanguages = () => {
+    const pLanguages = [
+        {
+            icon: '/images/icons/Java.png',
+            name: 'Java',
+            time: '3 years',
+            level: 80
+        },
+        {
+            icon: '/images/icons/C++.png',
+            name: 'C++',
+            time: '1 year',
+            level: 60
+        },
+        {
+            icon: '/images/icons/Python.png',
+            name: 'Python',
+            time: '8 months',
+            level: 50
+        },
+        {
+            icon: '/images/icons/Javascript.png',
+            name: 'JavaScript',
+            time: '6 months',
+            level: 50
+        },
+        {
+            icon: '/images/icons/Matlab.png',
+            name: 'Matlab',
+            time: '8 months',
+            level: 80
+        },
+        {
+            icon: '/images/icons/Swift.png',
+            name: 'Swift',
+            time: '6 months',
+            level: 80
+        }
+    ]
+
+    return pLanguages;
+}
+
+export default usePLanguages;
