@@ -13,9 +13,9 @@ const About = () => {
 
             <div className="flex flex-row justify-between gap-20 mb-16 max-md:flex-col">
                 <p className="basis-4/6">
-                    I am Alejandra Coeto, student of Computer Science and Technology at Tecnológico de Monterrey.
-                    I am also a Software Developer in the robotics team Roborregos, the vicepresident of the student group
-                    Women in Technology and a mentor of the FIRST robotics team Voltec 6647. I love to face new challenges and look forward to sharing my passion for robotics and
+                    I'm a Computer Science and Technology student at Tecnológico de Monterrey,
+                    Software Developer in the robotics team Roborregos, vicepresident of the student group
+                    Women in Technology and mentor of the FIRST robotics team Voltec. I love to face new challenges and look forward to sharing my passion for robotics and
                     programming with the rest of the community.
                 </p>
 
