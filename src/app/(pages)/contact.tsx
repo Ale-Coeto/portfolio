@@ -1,5 +1,5 @@
-import Tag from "./components/Contact/Tag";
-import Title from "./components/Title";
+import Tag from "../components/Contact/Tag";
+import Title from "../components/Title";
 import { BsEnvelope, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Contact = () => {

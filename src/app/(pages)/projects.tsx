@@ -1,9 +1,9 @@
-import Title from "./components/Title";
-import useProjects from "./hooks/useProjects";
-import ProjectGrid from "./components/Projects/projectGrid";
-import Subtitle from "./components/Subtitle";
-import useCompetitions from "./hooks/useCompetitions";
-import useResearch from "./hooks/useResearch";
+import Title from "../components/Title";
+import useProjects from "../hooks/useProjects";
+import ProjectGrid from "../components/Projects/projectGrid";
+import Subtitle from "../components/Subtitle";
+import useCompetitions from "../hooks/useCompetitions";
+import useResearch from "../hooks/useResearch";
 
 const Projects = () => {
     const projects = useProjects();

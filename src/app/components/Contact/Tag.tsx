@@ -21,7 +21,7 @@ const Tag: React.FC<TagProps> = ({
         >
 
             <Icon className="self-center mr-2 text-sky-400" />
-            <a href={href}>
+            <a href={href} target="_blank">
                 {name}
             </a>
         </div>

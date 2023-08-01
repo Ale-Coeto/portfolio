@@ -1,7 +1,7 @@
-import IconGrid from "./components/About/IconGrid";
-import Title from "./components/Title";
-import usePLanguages from "./hooks/usePLanguages";
-import useTechnologies from "./hooks/useTechnologies";
+import IconGrid from "../components/About/IconGrid";
+import Title from "../components/Title";
+import usePLanguages from "../hooks/usePLanguages";
+import useTechnologies from "../hooks/useTechnologies";
 
 const About = () => {
     const pLanguages = usePLanguages();

@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import NavBar from './components/Nav/NavBar/NavBar'
-import About from './about'
-import Experience from './experience'
+import About from './(pages)/about'
+import Experience from './(pages)/experience'
 import Divider from './components/Divider'
-import Contact from './contact'
-import Projects from './projects'
-import Intro from './intro'
+import Contact from './(pages)/contact'
+import Projects from './(pages)/projects'
+import Intro from './(pages)/intro'
 
 export default function Home() {
   return (

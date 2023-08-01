@@ -67,7 +67,7 @@ const useExperiences = () => {
                 "/images/photos/Voltec3.png",
                 "/images/photos/Voltec4.png"
             ],
-            icon: "/images/logos/VoltecPlain.png",
+            icon: "/images/logos/Voltec.png",
             iconColor: "blue"
         },
         {
