@@ -43,8 +43,8 @@ const infoDisplay: React.FC<InfoDisplayProps> = ({
             </div>
 
             <ul className="pl-4 mb-8 marker:text-sky-400">
-                {item.bullets.map((bullet) => (
-                    <li className="list-disc">
+                {item.bullets.map((bullet, key) => (
+                    <li key={key}className="list-disc">
                         {bullet}
                     </li>
                 ))}

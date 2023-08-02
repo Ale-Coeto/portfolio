@@ -17,7 +17,7 @@ const MobileBar = () => {
                 {open && (
                     <div className="flex flex-col items-center py-4 px-5 bg-custom-dark-gray w-full">
                         {routes.map((item, key) => (
-                            <NavElement mobile label={item.label} num={item.num} href={item.href} />
+                            <NavElement key={key} mobile label={item.label} num={item.num} href={item.href} />
                         ))}
                     </div>
                 )}
