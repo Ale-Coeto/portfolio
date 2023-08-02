@@ -26,7 +26,7 @@ const ProjectElement: React.FC<ProjectElementProps> = ({ title, description, ima
                     <Line />
                     <Thumbnail image={image} />
 
-                    <div className="text-base">
+                    <div className="text-base mt-4">
                         {description}
                     </div>
                 </div>
