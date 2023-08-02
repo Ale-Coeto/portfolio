@@ -49,8 +49,8 @@ const infoDisplay: React.FC<InfoDisplayProps> = ({
                     </li>
                 ))}
             </ul>
-            {item.images.map((image) => (
-                image && <ImageView image={image} />
+            {item.images.map((image, key) => (
+                image && <ImageView key={key} image={image} />
             ))}
 
         </div>

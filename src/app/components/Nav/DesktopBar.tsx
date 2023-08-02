@@ -17,8 +17,8 @@ const DesktopBar = () => {
                 </a>
 
                 <div className=" flex flex-row justify-between space-x-8">
-                    {routes.map((item) => (
-                        <NavElement num={item.num} label={item.label} href={item.href} />
+                    {routes.map((item, key) => (
+                        <NavElement key={key} num={item.num} label={item.label} href={item.href} />
                     ))}
                 </div>
             </nav>

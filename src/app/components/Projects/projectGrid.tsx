@@ -23,8 +23,8 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
               !short && `sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3`
             )}
         >
-            {items.map((item) => (
-                <ProjectElement title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place}/>
+            {items.map((item, key) => (
+                <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place}/>
             ))}
         </div>
     )
