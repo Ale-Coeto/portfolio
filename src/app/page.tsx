@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import NavBar from './components/Nav/NavBar/NavBar'
+import NavBar from './components/Nav/NavBar'
 import About from './(pages)/about'
 import Experience from './(pages)/experience'
 import Divider from './components/Divider'

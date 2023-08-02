@@ -6,22 +6,8 @@ interface ThumbnailProps {
 
 const Thumbnail: React.FC<ThumbnailProps> = ({ image }) => {
     return (
-        <div
-
-        >
-            <img
-                className='
-                h-32
-                w-full
-                object-cover
-                rounded-lg
-                my-4
-                
-                '
-
-                src={image}
-                alt="Image"
-            />
+        <div>
+            <img className=' h-32 w-full object-cover rounded-lg my-4' src={image} alt="Image" />
         </div>
     )
 }
