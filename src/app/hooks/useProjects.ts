@@ -3,7 +3,7 @@ const useProjects = () => {
         {
             title: 'Movie and Show Traker',
             description: 'Webpage to keep a movie and show watch-list, explore popular or trending content and see custom recomendations.',
-            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, The Movie Database API",
+            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, The Movie Database API, MongoDB Atlas",
             image: '/images/projects/WatchList.png',
             href: 'https://github.com/Ale-Coeto/movie-tracker'
         },
