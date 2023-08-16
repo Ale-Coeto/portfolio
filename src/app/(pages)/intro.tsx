@@ -13,9 +13,11 @@ const intro = () => {
                 <div className="pt-2 text-lg sm:text-2xl font-fira-code text-custom-text-dark-gray mb-8" >
                     &#60;Software Developer /&#62;
                 </div>
-                <button className=" bg-sky-500 rounded-md px-2 text-xl font-nunito text-custom-dark-gray font-semibold">
-                    Resume
-                </button>
+                <a href="/pdfs/Resume.pdf" target="_blank">
+                    <button className=" bg-sky-500 rounded-md px-2 text-xl font-nunito text-custom-dark-gray font-semibold">
+                        Resume
+                    </button>
+                </a>
                 <div className="lg:visible invisible absolute bottom-0 w-1 2xl:right-36 xl:w-2 h-1/3 right-32 rounded-full bg-gradient-to-b from-custom-green to-sky-400 " />
                 <div className="lg:visible invisible absolute bottom-0 w-1 2xl:right-52 xl:w-2 h-1/4 right-44 rounded-full bg-gradient-to-b from-custom-green to-sky-400 " />
             </div>
