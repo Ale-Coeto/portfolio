@@ -1,6 +1,13 @@
 const useProjects = () => {
     const projects = [
         {
+            title: 'FRIDA Assistant',
+            description: 'Next app that allows users to store information, analyze it and find data through a semantic search and AI chat.',
+            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, PostgreSQL, Azure AD, AWS Polly, Google Cloud, tRPC, FRIDA",
+            image: '/images/projects/FRIDA.png',
+            href: 'https://github.com/IvanRomero03/frida-assistant'
+        },
+        {
             title: 'Movie and Show Traker',
             description: 'Webpage to keep a movie and show watch-list, explore popular or trending content and see custom recomendations.',
             tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, The Movie Database API, MongoDB Atlas",

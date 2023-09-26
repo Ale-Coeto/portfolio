@@ -6,7 +6,7 @@ interface ThumbnailProps {
 
 const Thumbnail: React.FC<ThumbnailProps> = ({ image }) => {
     return (
-        <div className="relative h-32 w-full overflow-hidden">
+        <div className="relative h-40 w-full overflow-hidden">
             <Image className="object-cover rounded-lg my-4'" fill referrerPolicy="no-referrer" src={image} alt="Project" />
         </div>
     )

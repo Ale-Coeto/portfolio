@@ -1,5 +1,8 @@
+import NavBar from './components/Nav/NavBar'
+import ToasterContext from './components/ToasterContext'
 import './globals.css'
 import { Inter } from 'next/font/google'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='scroll-smooth scroll-pt-24'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+        <ToasterContext />
+        <NavBar>
+        </NavBar>
+      </body>
     </html>
   )
 }

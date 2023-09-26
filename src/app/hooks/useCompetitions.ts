@@ -9,6 +9,14 @@ const useCompetitions = () => {
             href: 'https://www.robocup.org/leagues/18'
         },
         {
+            title: 'ICPC',
+            description: 'Actively competing with a team of three in ICPC competitive programming contests.',
+            tools: "C++, Java",
+            place: [],
+            image: '/images/projects/Icpc.png',
+            href: 'https://icpc.global/'
+        },
+        {
             title: 'FIRST Robotics Competition',
             description: 'Led the engineering team and participated as robot driver in the seasons 2020-2022.',
             tools: "Java",
