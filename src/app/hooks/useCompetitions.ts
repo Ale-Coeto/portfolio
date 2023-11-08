@@ -12,9 +12,9 @@ const useCompetitions = () => {
             title: 'ICPC',
             description: 'Actively competing with a team of three in ICPC competitive programming contests.',
             tools: "C++, Java",
-            place: [],
-            image: '/images/projects/Icpc.png',
-            href: 'https://icpc.global/'
+            place: ["3th place on campus placement of ICPC Mexico’s Grand Prix"],
+            image: '/images/projects/ICPC.jpg',
+            href: 'https://Icpc.global/'
         },
         {
             title: 'FIRST Robotics Competition',
