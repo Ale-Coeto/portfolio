@@ -1,13 +1,23 @@
+import clsx from "clsx";
 import Image from "next/image";
+import { useState } from "react";
 
 interface ImageViewProps {
     image: string
 }
 
 const ImageView: React.FC<ImageViewProps> = ({ image }) => {
+    const [loading, setLoading] = useState(false);
+    if (!image)
+        setLoading(true);
+    // else
+    //     setLoading(false);
+
     return (
         <div
-            className='
+            className={clsx(
+                // loading && 'animate-pulse',
+                `
                     relative 
                     inline-block  
                     overflow-hidden
@@ -17,10 +27,12 @@ const ImageView: React.FC<ImageViewProps> = ({ image }) => {
                     max-w-[180px]
                     bg-gray-200
                     mr-4
-                '
+                `)}
         >
             <Image
-                className='border-2 object-cover object-center'
+                className={clsx(
+                    // loading && 'animate-pulse', 
+                    'border-2 object-cover object-center')}
                 fill
                 src={image}
                 referrerPolicy="no-referrer"

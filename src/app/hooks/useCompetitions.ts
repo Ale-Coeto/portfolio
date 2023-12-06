@@ -1,6 +1,14 @@
 const useCompetitions = () => {
     const competition = [
         {
+            title: 'ICPC',
+            description: 'Actively competing with a team of three in ICPC competitive programming contests.',
+            tools: "C++, Java",
+            place: ["3th place on campus placement of ICPC Mexico’s Grand Prix"],
+            image: '/images/projects/ICPC.jpg',
+            href: 'https://Icpc.global/'
+        },
+        {
             title: 'Robocup Soccer Lightweight',
             description: 'Programmed the movement, sensor libraries, vision and algorithms of two soccer playing robots.',
             tools: "Arduino CLI, CPP, Micro-python",
@@ -9,12 +17,12 @@ const useCompetitions = () => {
             href: 'https://www.robocup.org/leagues/18'
         },
         {
-            title: 'ICPC',
-            description: 'Actively competing with a team of three in ICPC competitive programming contests.',
-            tools: "C++, Java",
-            place: ["3th place on campus placement of ICPC Mexico’s Grand Prix"],
-            image: '/images/projects/ICPC.jpg',
-            href: 'https://Icpc.global/'
+            title: 'Nao Wrestling',
+            description: 'Programmed vision and movement algorithms for a Nao robot to compete in a simlated wrestling match.',
+            tools: "Python, OpenCv",
+            place: ["7th International"],
+            image: '/images/projects/Nao.png',
+            href: 'https://github.com/cyberbotics/wrestling'
         },
         {
             title: 'FIRST Robotics Competition',

@@ -59,6 +59,30 @@ const useTechnologies = () => {
             name: 'MongoDB',
             time: '',
             level: 60
+        },
+        {
+            icon: '/images/icons/AWS.png',
+            name: 'AWS',
+            time: '',
+            level: 60
+        },
+        {
+            icon: '/images/icons/Flask.png',
+            name: 'Flask',
+            time: '',
+            level: 60
+        },
+        {
+            icon: '/images/icons/OpenCV.png',
+            name: 'OpenCv',
+            time: '',
+            level: 60
+        },
+        {
+            icon: '/images/icons/SQL.png',
+            name: 'SQL',
+            time: '',
+            level: 60
         }
     ]
     return technologies;

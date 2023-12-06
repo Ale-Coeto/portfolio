@@ -1,6 +1,20 @@
 const useProjects = () => {
     const projects = [
         {
+            title: 'Security system IOT',
+            description: 'Security system prototype for the elder. Access through face recognition, monitor with sensors and display in webpage.',
+            tools: "React, Typescript, AWS EC2, Docker, Flask, Face-recognition, AWS Websocket API, Google OAuth, Tailwind, SQL, tRPC, Arduino",
+            image: '/images/projects/IOT.png',
+            href: 'https://github.com/Ale-Coeto/IOT_security-system'
+        },
+        {
+            title: 'Smart Resource Manager',
+            description: 'Web app to monitor energy consumption, get optimized routes and classify trash. Project for CEMEX Hack 2023.',
+            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, tRPC, AWS Websocket API",
+            image: '/images/projects/Cemex.png',
+            href: 'https://github.com/Oscar-gg/cemex_hacks_2023'
+        },
+        {
             title: 'FRIDA Assistant',
             description: 'Next app that allows users to store information, analyze it and find data through a semantic search and AI chat.',
             tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, PostgreSQL, Azure AD, AWS Polly, Google Cloud, tRPC, FRIDA",

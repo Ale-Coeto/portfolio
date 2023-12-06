@@ -1,4 +1,3 @@
-import {usePathname } from "next/navigation";
 
 const useSections = () => {
     const routes = [

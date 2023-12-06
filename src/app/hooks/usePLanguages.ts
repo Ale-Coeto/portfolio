@@ -10,18 +10,24 @@ const usePLanguages = () => {
         {
             icon: '/images/icons/C++.png',
             name: 'C++',
-            time: '1 year',
+            time: '2 years',
             level: 60
         },
         {
             icon: '/images/icons/Python.png',
             name: 'Python',
-            time: '8 months',
+            time: '2 years',
             level: 50
         },
         {
             icon: '/images/icons/Javascript.png',
             name: 'JavaScript',
+            time: '6 months',
+            level: 50
+        },
+        {
+            icon: '/images/icons/Typescript.png',
+            name: 'Typescript',
             time: '6 months',
             level: 50
         },
