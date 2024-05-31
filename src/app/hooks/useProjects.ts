@@ -1,6 +1,13 @@
 const useProjects = () => {
     const projects = [
         {
+            title: 'Swift Student Challenge',
+            description: 'Introduction to climbing app, providing tips, tracking user progress and showing AR views of different climbing holds.\n Distinguished winner 2024!',
+            tools: "Swift, ARKit, Reality, Combine, Core Data, Charts, Blender, Playgrounds, XCode",
+            image: '/images/projects/Swift.png',
+            href: 'https://github.com/Ale-Coeto/Swift-Student-Challenge-2024'
+        },
+        {
             title: 'Security system IOT',
             description: 'Security system prototype for the elder. Access through face recognition, monitor with sensors and display in webpage.',
             tools: "React, Typescript, AWS EC2, Docker, Flask, Face-recognition, AWS Websocket API, Google OAuth, Tailwind, SQL, tRPC, Arduino",

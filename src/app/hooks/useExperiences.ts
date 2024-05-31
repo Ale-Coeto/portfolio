@@ -1,6 +1,37 @@
 const useExperiences = () => {
     const experience = [
         {
+            title: "Google",
+            position: "STEP Intern",
+            date: "Jun 2024 - Sep 2024",
+            info: "Incoming Google STEP (Student Training in Engineering Program) intern at a cloud apps project."
+            ,
+            bullets: [
+                
+            ],
+            images: [
+                
+            ],
+            icon: "/images/logos/Google.jpeg",
+            iconColor: "black"
+        },
+        {
+            title: "On Campus",
+            position: "DevOps Intern",
+            date: "Feb 2024 - Present",
+            info: "DevOps at Crowd Counting project, aiming to collect environment information from a park through cameras and sensors."
+            ,
+            bullets: [
+                "Evaluating and implementing re-identification models for multi-camera people tracking with anchor-guided clustering.",
+                "Programming with python, pytorch, openCV and yolo. Using Conda environments in an Azure Linux VM."
+            ],
+            images: [
+                
+            ],
+            icon: "/images/logos/Tec.png",
+            iconColor: "white"
+        },
+        {
             title: "Roborregos",
             position: "Software Developer",
             date: "2022 - Present",

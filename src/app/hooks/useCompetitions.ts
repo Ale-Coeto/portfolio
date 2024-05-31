@@ -1,10 +1,18 @@
 const useCompetitions = () => {
     const competition = [
         {
+            title: 'RoboCup@Home',
+            description: 'Developed computer vision algorithms for a general purpose service robot.',
+            tools: "Python, OpenCv, ROS, YOLO, REID, Face Recognition",
+            place: ["2nd National"],
+            image: '/images/projects/Home.jpeg',
+            href: 'https://github.com/RoBorregos/home'
+        },
+        {
             title: 'ICPC',
             description: 'Actively competing with a team of three in ICPC competitive programming contests.',
             tools: "C++, Java",
-            place: ["3th place on campus placement of ICPC Mexico’s Grand Prix"],
+            place: ["3th place on campus ICPC Mexico Grand Prix"],
             image: '/images/projects/ICPC.jpg',
             href: 'https://Icpc.global/'
         },

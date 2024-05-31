@@ -14,7 +14,7 @@ const intro = () => {
                     &#60;Software Developer /&#62;
                 </div>
                 <a href="/pdfs/Resume.pdf" target="_blank">
-                    <button className=" bg-sky-500 rounded-md px-2 text-xl font-nunito text-custom-dark-gray font-semibold">
+                    <button className=" bg-sky-500 rounded-full px-4 py-1 text-xl font-nunito text-custom-dark-gray font-semibold">
                         Resume
                     </button>
                 </a>

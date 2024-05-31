@@ -20,9 +20,9 @@ const infoDisplay: React.FC<InfoDisplayProps> = ({
     return (
         <div className="w-full">
             <div className="flex flex-row align-center mb-8 justify-between max-xl:flex-col max-xl:mb-0 ">
-                <div className="flex flex-row">
+                <div className="flex flex-row gap-3">
                     <div className="self-center mr-2">
-                        <RoundedIcon icon={item.icon} color="black" size="xl" />
+                        <RoundedIcon icon={item.icon} color={item.iconColor} size="xl" />
                     </div>
                     <div className="mt-[-35px]">
                         <Subtitle title={item.title} />

@@ -10,8 +10,7 @@ const ImageView: React.FC<ImageViewProps> = ({ image }) => {
     const [loading, setLoading] = useState(false);
     if (!image)
         setLoading(true);
-    // else
-    //     setLoading(false);
+
 
     return (
         <div
