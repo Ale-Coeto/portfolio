@@ -38,7 +38,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ items }) => {
             </div>
 
 
-            <div className={clsx(open && 'invisible h-0 md:h-auto md:visible', "visible flex md:flex-col flex-col justify-start whitespace-nowrap md:mb-2 mb-8 left-0 mt-4 md:overflow-scroll md:mr-20")}>
+            <div className={clsx(open && 'invisible h-0 md:h-auto md:visible', "visible flex md:flex-col flex-col justify-start whitespace-nowrap md:mb-2 mb-8 left-0 mt-4 md:mr-20")}>
                 {items.map((item, key) => (
                     <div key={key} onClick={() => handleSelect(key)}>
                         <MenuElement title={item.title} selected={key == selected} />
