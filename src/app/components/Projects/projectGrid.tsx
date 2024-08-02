@@ -1,8 +1,7 @@
 "use client";
 import clsx from "clsx"
 import ProjectElement from "./projectElement"
-import { FaMinus, FaPlusCircle } from "react-icons/fa"
-import { AiFillPlusCircle } from "react-icons/ai"
+import { FaMinus } from "react-icons/fa"
 import { BsPlus } from "react-icons/bs"
 import { useState } from "react"
 interface ProjectGridProps {
