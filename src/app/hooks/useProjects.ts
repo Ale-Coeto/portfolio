@@ -20,7 +20,7 @@ const useProjects = () => {
             title: 'FridaGO',
             description: 'Web app to revolutionize market experience and API to analyze supermarket camera feed',
             tools: "Yolo, OpenCV, FastAPI, OpenVino, React, Typescript, Prisma, TailwindCSS, tRPC, Docker, Clustering",
-            image: '/images/projects/FridaGO.png',
+            image: '/images/projects/FridaGo.png',
             href: 'https://github.com/Ale-Coeto/FridaGo-API',
             categories: ["Web", "Computer vision"]
         },
