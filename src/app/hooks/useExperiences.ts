@@ -4,10 +4,11 @@ const useExperiences = () => {
             title: "Google",
             position: "STEP Intern",
             date: "Jun 2024 - Sep 2024",
-            info: "Incoming Google STEP (Student Training in Engineering Program) intern at a cloud apps project."
+            info: "Google STEP (Student Training in Engineering Program) intern in the Cloud GEM Devices team. (Google Endpoint Management)"
             ,
             bullets: [
-                
+                "Developed new “Show last known location” feature for company-owned lost devices through the Admin Console, displaying a dialog containing a map with a marker and a window with lost details and geocode address after fetching the info from the device.",
+                "Completed design process and full stack implementation using java, javascript, gRPC, Google Maps API and internal frameworks."
             ],
             images: [
                 
@@ -23,7 +24,8 @@ const useExperiences = () => {
             ,
             bullets: [
                 "Evaluating and implementing re-identification models for multi-camera people tracking with anchor-guided clustering.",
-                "Programming with python, pytorch, openCV and yolo. Using Conda environments in an Azure Linux VM."
+                "Programming with python, pytorch, openCV and yolo. Using Conda environments in an Azure Linux VM.",
+                "Developing APIs to host different vision algorithms such as birds-eye-view using Docker, AWS, FastAPI and bash scripts."
             ],
             images: [
                 
@@ -33,16 +35,18 @@ const useExperiences = () => {
         },
         {
             title: "Roborregos",
-            position: "Software Developer",
-            date: "2022 - Present",
-            info: "Software developer at the representative Robotics Team from Tecnológico de Monterrey"
+            position: "President and Software Developer",
+            date: "Dec 2022 - Present",
+            info: "Software developer and president of the representative Robotics Team from Tecnológico de Monterrey."
             ,
             bullets: [
                 "Competed in regional and national robotics tournaments representing ITESM.",
-                "Currently part of the Robocup @Home team, learning ROS and machine learning for computer vision.",
+                "Currently part of the Robocup @Home team as software developer and project manager of the computer vision subteam.",
                 "Working on the authentication and registration of users for an inventory webpage.",
                 "Programmed the movement, sensor libraries and algorithms of two soccer playing robots, using arduino CLI, C++ and micro-python for computer vision algorithms.",
                 "Achieved 3rd place with my team (of three) in the National Mexican Robotics Tournament in the Soccer Lightweight category.",
+                "Achieved 2nd place with a team of 12 in the National Robotics Tournament in the Robocup @Home category, classifying to the international competition.",
+                "Leading and organizing the yearly on-campus robotics competition Candidates 2024, with over 300 participants."
             ],
             images: [
                 "/images/photos/Rbrgs1.png",
@@ -55,11 +59,12 @@ const useExperiences = () => {
         {
             title: "WIT",
             position: "Vicepresident of Women in technology",
-            date: "March 2023 - Present",
+            date: "March 2023 - June 2024",
             info: "Coordinating the student group WIT from Tecnológico de Monterrey as vicepresident.",
             bullets: [
-                "Developing the action plan for the following semester",
-                "Teaching programming through the MIT App Inventor tool to 40 students"
+                "Coordinated the student group Women in Technology from Tecnológico de Monterrey as vicepresident.",
+                "Organizing events with my team to enhance the progress of women in tech and promote inclusiveness, impacting over 100 students",
+                "Taught programming and app development with the MIT App Inventor tool to 20 middle school students."
             ],
             images: [],
             icon: "/images/logos/Wit.png",
@@ -67,24 +72,9 @@ const useExperiences = () => {
 
         },
         {
-            title: "VantTec",
-            position: "Software Developer",
-            date: "2022 - Present",
-            info: "Developer at the research group Non Tripulated Autonomous Vehicles from Tecnológico de Monterrey",
-            bullets: [
-                "Part of the Roboboat team on the mechanics and software areas.",
-                "Currently learning ROS 2 (Robot Operationg System)"
-            ],
-            images: [
-                "/images/photos/VantTec.png",
-            ],
-            icon: "/images/logos/VantTec.png",
-            iconColor: "blue"
-        },
-        {
             title: "Voltec",
             position: "Mentor and Ex-Team Leader",
-            date: "2019 - Present",
+            date: "Aug 2019 - June 2024",
             info: "Leading the engineering department of the FIRST high school team VOLTEC Robotics",
             bullets: [
                 "Teaching countinously programming and robotics to more than 20 3rd grade students and over 20 highschool students.",
