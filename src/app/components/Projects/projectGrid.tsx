@@ -3,7 +3,9 @@ import clsx from "clsx"
 import ProjectElement from "./projectElement"
 import { FaMinus } from "react-icons/fa"
 import { BsPlus } from "react-icons/bs"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { tags, tags_bg } from "@/app/Utils/tags"
+
 interface ProjectGridProps {
     items: {
         title: string
@@ -12,40 +14,94 @@ interface ProjectGridProps {
         href: string
         tools?: string
         place?: string[]
+        categories?: string[]
     }[]
-    short?: boolean
+    short?: boolean,
+    show_categories?: boolean,
+    header: string
 }
 
 const ProjectGrid: React.FC<ProjectGridProps> = ({
     items,
-    short
+    short,
+    show_categories,
+    header
 }) => {
     const [all, setAll] = useState(true);
+    const tags_name = Array.from(tags.keys());
+    const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
+    const [displayedItems, setDisplayedItems] = useState(items.length);
 
+    const [animating, setAnimating] = useState(false);
+
+    useEffect(() => {
+        setAnimating(true);
+        const timer = setTimeout(() => {
+            setAnimating(false);
+        }, 300); // Match this duration with your CSS animation duration
+
+        return () => clearTimeout(timer);
+    }, [selectedTags]);
+
+    const handleClick = (tag: string) => {
+        if (selectedTags.has(tag)) {
+            selectedTags.delete(tag);
+        } else {
+            selectedTags.add(tag);
+        }
+        setSelectedTags(new Set(selectedTags));
+    }
+
+    const handleClose = (value: boolean) => {
+        setAll(value);
+        const target = `${window.location.origin}/#${header}`;
+        window.location.href = target;
+    }
 
     return (
-        <div>
-
+        <div className="md:px-16 text-sm">
+            {show_categories && (
+                <div className="flex flex-row justify-start md:justify-center flex-wrap gap-2 mb-5">
+                    {tags_name.map((tag, key) => (
+                        <div key={key} onClick={() => handleClick(tag)} className={clsx(
+                            'inline-block px-2 py-1 rounded-md mr-2 text-xs hover:underline hover:cursor-pointer', // Keep existing classes
+                            tag && selectedTags.has(tag) ? tags_bg.get(tag) : '', // Get the corresponding color from the tags map or return an empty string if tag is undefined
+                            tag && selectedTags.has(tag) == false ? tags.get(tag) : '',
+                            animating ? 'animate-fade-in' : 'animate-fade-out'
+                        )}>
+                            {tag}
+                        </div>
+                    ))}
+                </div>
+            )}
             {all ?
                 (
                     <div>
-                        <div className={clsx('grid gap-4',
+                        <div className={clsx('grid gap-6',
                             short && `lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4`,
                             !short && `sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3`
                         )}
                         >
-                            {items.slice(0,6).map((item, key) => (
-                                <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place} />
-                            ))}
+                            {items.filter(item =>
+                                selectedTags.size === 0 ||
+                                (item.categories && item.categories.some(tag => selectedTags.has(tag)))
+                            )
+                                .slice(0, 6).map((item, key) => (
+                                    //check if the item has the selected tags
+                                    <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place} categories={item.categories} />
+                                ))}
                         </div>
-                        {items.length > 6 && (
-                            <button onClick={() => setAll(false)} className="w-full flex flex-row justify-center align-center items-center underline pt-6 text-custom-text-dark-gray hover:text-custom-text-gray">
-                                <BsPlus className="text-2xl mr-2" />
-                                <div>
-                                    See all
-                                </div>
-                            </button>
-                        )}
+                        {items.filter(item =>
+                            selectedTags.size === 0 ||
+                            (item.categories && item.categories.some(tag => selectedTags.has(tag)))
+                        ).length > 6 && (
+                                <button onClick={() => setAll(false)} className="w-full flex flex-row justify-center align-center items-center underline pt-6 text-custom-text-dark-gray hover:text-custom-text-gray">
+                                    <BsPlus className="text-2xl mr-2" />
+                                    <div>
+                                        See all
+                                    </div>
+                                </button>
+                            )}
                     </div>
                 )
                 :
@@ -55,14 +111,19 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
                         !short && `sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3`
                     )}
                     >
-                        {items.map((item, key) => (
-                            <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place} />
-                        ))}
+                        {items.filter(item =>
+                            selectedTags.size === 0 ||
+                            (item.categories && item.categories.some(tag => selectedTags.has(tag)))
+                        )
+                            .map((item, key) => (
+                                //check if the item has the selected tags
+                                <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place} categories={item.categories} />
+                            ))}
                     </div>
-                    <button onClick={() => setAll(true)} className="w-full flex flex-row justify-center align-center items-center underline pt-6 text-custom-text-dark-gray hover:text-custom-text-gray">
+                    <button onClick={() => handleClose(true)} className="w-full flex flex-row justify-center align-center items-center underline pt-6 text-custom-text-dark-gray hover:text-custom-text-gray">
                         <FaMinus className="text-md mr-2" />
                         <div>
-                            Close
+                            See less
                         </div>
                     </button>
 

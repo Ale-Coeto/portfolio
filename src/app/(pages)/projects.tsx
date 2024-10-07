@@ -14,14 +14,14 @@ const Projects = () => {
         <div id="projects">
             <Title number="03." title="Projects and Competitions" />
 
-            <Subtitle title="Projects" />
-            <ProjectGrid items={projects} />
+            <Subtitle title="Projects" header="projects"/>
+            <ProjectGrid items={projects} show_categories header="projects" />
 
-            <Subtitle title="Competitions" />
-            <ProjectGrid items={competitions} />
+            <Subtitle title="Competitions" header="competitions"/>
+            <ProjectGrid items={competitions} header="competitions" />
 
-            <Subtitle title="Research projects" />
-            <ProjectGrid items={research} short={true} />
+            <Subtitle title="Research projects" header="research"/>
+            <ProjectGrid items={research} short={true} header="research" />
 
         </div>
     )

@@ -10,9 +10,11 @@ interface ProjectElementProps {
     href: string
     tools?: string
     place?: string[]
+    categories?: string[]
 }
 
-const ProjectElement: React.FC<ProjectElementProps> = ({ title, description, image, href, tools, place }) => {
+
+const ProjectElement: React.FC<ProjectElementProps> = ({ title, description, image, href, tools, place, categories }) => {
     return (
         <a href={href} target="_blank"
             className=" bg-custom-light-gray p-6 rounded-xl z-1 drop-shadow-lg transition: transform 0.15s hover:-translate-y-1 hover:bg-[#333942] cursor-pointer font-nunito"
@@ -26,12 +28,12 @@ const ProjectElement: React.FC<ProjectElementProps> = ({ title, description, ima
                     <Line />
                     <Thumbnail image={image} />
 
-                    <div className="text-base mt-4">
+                    <div className="text-sm mt-4">
                         {description}
                     </div>
                 </div>
 
-                <ProjectFooter tools={tools} place={place} />
+                <ProjectFooter tools={tools} place={place} categories={categories} />
             </div>
 
         </a>
