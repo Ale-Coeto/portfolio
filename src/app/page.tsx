@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
 
-    <main className='py-16 bg-custom-dark-gray md:px-20 lg:px-40 xl:px-60 px-11 text-gray-100 text-lg font-nunito font-light'>
+    <main className='py-16 bg-custom-dark-gray md:px-20 lg:px-40 xl:px-60 px-11 text-gray-100 font-nunito font-light'>
       <Intro />
       <Divider />
 

@@ -1,11 +1,13 @@
 
 interface SubtitleProps {
-    title: string
+    title: string,
+    header?: string
 }
 
-const Subtitle: React.FC<SubtitleProps> = ({ title }) => {
+const Subtitle: React.FC<SubtitleProps> = ({ title, header }) => {
     return (
         <div
+            id={header}
             className="
             
             text-white

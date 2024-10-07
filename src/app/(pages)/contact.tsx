@@ -9,6 +9,9 @@ import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import axios from "axios";
 import dotenv from "dotenv";
+import Divider from "../components/Divider";
+import { FaEnvelope } from "react-icons/fa";
+
 
 
 
@@ -87,16 +90,30 @@ const Contact = () => {
 
                 </div>
 
-                <button type="submit" className=" bg-sky-500 rounded-md px-2 text-xl font-nunito text-custom-dark-gray font-semibold hover:bg-sky-400">
+                {/* <button type="submit" className=" bg-custom-text-dark-gray px-2 text-custom-dark-gray rounded-md font-fira-code font-semibold hover:underline">
                     Send
-                </button>
+                </button> */}
+                <div className="flex justify-end">
+                    <button className=" bg-sky-500 rounded-full px-3 py-1 font-nunito text-custom-dark-gray font-semibold">
+                        Send
+                    </button>
+                </div>
 
             </form>
-
-            <div className="justify-items-center text-center">
-                <Tag name="alecoeto@hotmail.com" icon={BsEnvelope} />
-                <Tag name="alecocoeto" icon={BsLinkedin} href="https://www.linkedin.com/in/alecoeto/" />
-                <Tag name="Ale-Coeto" icon={BsGithub} href="https://github.com/Ale-Coeto" />
+            <Divider />
+            <div className="flex lg:flex-row flex-col justify-between text-left mt-8">
+                <div className="text-xl flex gap-3 ">
+                    {/* <h1 className="font-bold pb-1">
+                        Contact
+                    </h1> */}
+                    <Tag name="Ale-Coeto" icon={BsGithub} href="https://github.com/Ale-Coeto" />
+                    <Tag name="alecocoeto" icon={BsLinkedin} href="https://www.linkedin.com/in/alecoeto/" />
+                    <Tag name="alecoeto@hotmail.com" icon={FaEnvelope} href="mailto:alecoetos@gmail.com?subject=Contact portfolio&body=Contacting you through your portfolio" />
+                </div>
+                <div className="mt-5" />
+                <p className="text-sm">
+                    Last update: Oct 7, 2024
+                </p>
             </div>
 
         </div>

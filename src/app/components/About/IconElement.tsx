@@ -7,23 +7,28 @@ interface IconElementProps {
     name: string
     time: string
     level: number
+    size?: string
 }
 const IconElement: React.FC<IconElementProps> = ({
     icon,
     name,
     time,
-    level
+    level,
+    size,
 }) => {
     return (
-        <div className="flex flex-row align-center bg-custom-light-gray p-2 rounded-xl m-1.5 items-center">
-            <RoundedIcon icon={icon} />
-            <div className='flex flex-col justify-between'>
-                    <div className='font-nunito'>
-                        {name}
+        <div className="flex flex-row items-center bg-custom-light-gray p-2 rounded-xl m-2 shadow-md hover:shadow-lg transition-shadow duration-300">
+            <RoundedIcon icon={icon} size={size} />
+            <div className='flex flex-col ml-0 '> {/* Added margin-left for spacing */}
+                <div className='font-nunito text-base font-semibold'> {/* Added a larger font size */}
+                    {name}
+                </div>
+                {time && (
+                    <div className="text-custom-text-gray font-fira-code text-sm"> {/* Added margin-top for spacing */}
+                    {time}
                     </div>
-                    <div className="text-custom-text-gray font-fira-code text-sm m-0">
-                        {time}
-                    </div>
+                )}
+               
             </div>
         </div>
     )

@@ -12,7 +12,7 @@ module.exports = {
         'custom-light-gray': '#2b313a',
         'custom-green': '#1ad499',
         'custom-text-gray' : '#BBBBBB',
-        'custom-text-dark-gray' : '#7A7A7A',
+        'custom-text-dark-gray' : '#838A8A',
       },
       fontFamily: {
         'fira-code': ['Fira Code', 'monospace'],

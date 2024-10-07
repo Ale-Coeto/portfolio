@@ -8,14 +8,15 @@ interface IconGridProps {
         icon: string
         time: string
         level: number
-    }[]
+    }[],
+    size?: string
 
 }
-const IconGrid: React.FC<IconGridProps> = ({ title, items }) => {
+const IconGrid: React.FC<IconGridProps> = ({ title, items, size }) => {
     return (
         <div>
             <Subtitle title={title} />
-            <div className=" grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  2xl:grid-cols-5" >
+            <div className=" grid px-8 md:px-12  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  2xl:grid-cols-5" >
                 {items.map((item, key) => (
                     <IconElement
                         key={key}
@@ -23,6 +24,7 @@ const IconGrid: React.FC<IconGridProps> = ({ title, items }) => {
                         icon={item.icon}
                         time={item.time}
                         level={item.level}
+                        size={size}
                     />
                 ))}
 

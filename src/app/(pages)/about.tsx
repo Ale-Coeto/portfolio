@@ -23,14 +23,14 @@ const About = () => {
                     <h2 className="font-bold text-xl">Languages Spoken</h2>
                     <ul className="basis-1/3 inline-block right-0">
                         <li className="right-0 pr-0"> Spanish <span > Native </span>  </li>
-                        <li className="right-0 pr-0"> English  <span > Advanced (B2) </span> </li>
+                        <li className="right-0 pr-0"> English  <span > Advanced (C1) </span> </li>
                         <li className="right-0 pr-0"> German <span > Intermediate (B1)</span>  </li>
                     </ul>
                 </div>
             </div>
 
             <IconGrid title="Programming Languages" items={pLanguages} />
-            <IconGrid title="Technologies" items={technologies} />
+            <IconGrid title="Technologies" items={technologies} size="sm"/>
 
 
 

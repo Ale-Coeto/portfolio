@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className='scroll-smooth scroll-pt-24'>
       <body className={inter.className}>{children}
         <ToasterContext />
-        <NavBar>
+        <NavBar children={undefined}>
         </NavBar>
       </body>
     </html>
