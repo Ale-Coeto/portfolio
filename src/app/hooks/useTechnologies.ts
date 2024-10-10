@@ -83,6 +83,12 @@ const useTechnologies = () => {
             name: 'SQL',
             time: '',
             level: 60
+        },
+        {
+            icon: '/images/icons/Fastapi.png',
+            name: 'FastAPI',
+            time: '',
+            level: 60
         }
     ]
     return technologies;
