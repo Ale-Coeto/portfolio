@@ -1,3 +1,5 @@
+import { title } from "process";
+
 const useProjects = () => {
     const projects = [
         {
@@ -14,7 +16,7 @@ const useProjects = () => {
             tools: "React, Typescript, AWS EC2, Docker, Flask, Face-recognition, AWS Websocket API, Google OAuth, Tailwind, SQL, tRPC, Arduino",
             image: '/images/projects/IOT.png',
             href: 'https://github.com/Ale-Coeto/IOT_security-system',
-            categories : ["Favorite", "Web", "IOT"]
+            categories : ["Favorite", "Web", "IOT", "Computer vision"]
         },
         {
             title: 'FridaGO',
@@ -23,6 +25,30 @@ const useProjects = () => {
             image: '/images/projects/FridaGo.png',
             href: 'https://github.com/Ale-Coeto/FridaGo-API',
             categories: ["Web", "Computer vision"]
+        },
+        {
+            title: 'Robocup @Home',
+            description: 'Developed computer vision algorithms for a general purpose service robot. (Person tracking, face recognition, object detection)',
+            tools: "Python, OpenCv, ROS, YOLO, REID, Face Recognition, Docker",
+            image: '/images/projects/HomeProject.jpeg',
+            href: 'https://github.com/RoBorregos/home-vision',
+            categories: ["Robotics", "Computer vision"]
+        },
+        {
+            title: 'FRIDA Assistant',
+            description: 'Next app that allows users to store information, analyze it and find data through a semantic search and AI chat.',
+            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, PostgreSQL, Azure AD, AWS Polly, Google Cloud, tRPC, FRIDA",
+            image: '/images/projects/FRIDA.png',
+            href: 'https://github.com/IvanRomero03/frida-assistant',
+            categories: ["Web", "AI", "Cloud"]
+        },
+        {
+            title: 'Candidates Dashboard',
+            description: 'Web app for a robotics competition. Displays general information, scores and schedule for each team',
+            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, tRPC, PostgreSQL",
+            image: '/images/projects/Candidates.png',
+            href: 'https://github.com/RoBorregos/CandidatesDashboard',
+            categories: ["Web"]
         },
         {
             title: 'Smart Resource Manager',
@@ -41,12 +67,12 @@ const useProjects = () => {
             categories: ["Web"]
         },
         {
-            title: 'FRIDA Assistant',
-            description: 'Next app that allows users to store information, analyze it and find data through a semantic search and AI chat.',
-            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, PostgreSQL, Azure AD, AWS Polly, Google Cloud, tRPC, FRIDA",
-            image: '/images/projects/FRIDA.png',
-            href: 'https://github.com/IvanRomero03/frida-assistant',
-            categories: ["Web", "AI", "Cloud"]
+            title: 'Robocup Soccer',
+            description: 'Programmed the movement, sensor libraries, vision and algorithms of two soccer playing robots.',
+            tools: "Arduino, CPP, Micro-python",
+            image: '/images/projects/Soccer.jpg',
+            href: 'https://github.com/RoBorregos/robocup-soccerlight-2023',
+            categories: ["Robotics"]
         },
         {
             title: 'Movie and Show Traker',
