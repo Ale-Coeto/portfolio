@@ -32,7 +32,7 @@ const useProjects = () => {
             tools: "Python, OpenCv, ROS, YOLO, REID, Face Recognition, Docker",
             image: '/images/projects/HomeProject.jpeg',
             href: 'https://github.com/RoBorregos/home-vision',
-            categories: ["Robotics", "Computer vision"]
+            categories: ["Robotics", "Computer vision", "Favorite"]
         },
         {
             title: 'FRIDA Assistant',
