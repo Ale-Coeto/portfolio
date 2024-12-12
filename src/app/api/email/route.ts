@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
-import emailjs, { send } from '@emailjs/browser';
-
-import toast from "react-hot-toast";
-
+// import emailjs, { send } from '@emailjs/browser';
+import { send } from 'emailjs-com';
 
 export async function POST(req: Request) {
     try {
@@ -29,8 +27,9 @@ export async function POST(req: Request) {
 
         const sendEmail = (templateParams:any) => {
             console.log("sending email")
-
-            emailjs.send("service_ukt3enr","template_p2w9hgo", templateParams, "ue3nt1I8OfZhvIjye")
+            const service = process.env.SERVICE_ID ?? ""
+            const template = process.env.TEMPLATE_ID ?? ""
+            send(service,template, templateParams)
               .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
               }, (error) => {

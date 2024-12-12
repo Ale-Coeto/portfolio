@@ -11,20 +11,19 @@ const Journey = () => {
     return (
 
         <div id="journey">
-            <Title number="04." title="Journey" />
+            <Title number="04." title="My Journey" />
 
-            <div className="absolute bg-custom-light-gray p-2 rounded-md text-sm">
+            <div className="invisible md:visible absolute bg-custom-light-gray p-2 rounded-md text-sm">
 
                 <LegendItem label="Competitions" color="bg-sky-500" />
                 <LegendItem label="Events" color="bg-custom-green" />
 
-
             </div>
 
-            <div className="translate-x-1/4 flex flex-col justify-start  h-[70vh] overflow-scroll">
+            <div className="md:translate-x-1/4 flex flex-col justify-start  h-[70vh] overflow-scroll">
                 <EndLines top={true} />
                 {journey.map((event, key) => (
-                    <JourneyEvent title={event.title} description={event.description} date={event.date} image={event.image} href={event.href} places={event.place} />
+                    <JourneyEvent key={key} title={event.title} description={event.description} date={event.date} image={event.image} href={event.href} places={event.place} />
                 ))}
                 <EndLines />
             </div>

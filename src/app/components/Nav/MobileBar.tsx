@@ -12,7 +12,7 @@ const MobileBar = () => {
 
     return (
         <div className="visible sm:invisible">
-            <div className="w-full z-50 bg-custom-dark-gray fixed p-4 text-white text-2xl" onClick={() => setOpen(!open)}>
+            <div className="fixed w-full z-50 bg-custom-dark-gray p-4 text-white text-2xl top-0" onClick={() => setOpen(!open)}>
                 <FiMenu />
                 {open && (
                     <div className="flex flex-col items-center py-4 px-5 bg-custom-dark-gray w-full">

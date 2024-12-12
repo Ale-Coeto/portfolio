@@ -13,8 +13,7 @@ const RoundedIcon: React.FC<RoundedIconProps> = ({ icon, color, size }) => {
     const [loading, setLoading] = useState(false);
     if (!icon)
         setLoading(true);
-    // else
-    //     setLoading(false);
+
     return (
         <div
             className={clsx(`relative  inline-block  rounded-full  overflow-hidden border-2 border-solid border-gray-100`,

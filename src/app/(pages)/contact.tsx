@@ -43,34 +43,23 @@ const Contact = () => {
                 message: data.message
             };
 
-            dotenv.config();
-            const templateId =  process.env.TEMPLATE_ID as string;
-            const serviceId =  process.env.SERVICE_ID as string;
-            const emailjsKey = process.env.REACT_APP_EMAILJS_KEY as string;
-
-
-            if (templateId !== undefined && serviceId != undefined && emailjsKey !== undefined) {
-                emailjs.send(serviceId, templateId, templateParams, emailjsKey)
-                    .then((response) => {
-                        console.log('SUCCESS!', response.status, response.text);
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    }).then((res) => {
-                        toast.success("Email sent");
-                    }).catch((err) => {
-                        toast.error("Error sending email");
-                    });
-            }
-
-            else
-                console.log("Missing env variables")
+            emailjs.send("serviceId", "templateId", templateParams, "emailjsKey")
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, (error) => {
+                    console.log('FAILED...', error);
+                }).then((res) => {
+                    toast.success("Email sent");
+                }).catch((err) => {
+                    toast.error("Error sending email");
+                });
         }
 
     };
 
     return (
         <div id="contact">
-            <Title number="04." title="Contact" />
+            <Title number="05." title="Contact" />
 
             <form onSubmit={handleSubmit(sendEmail)}>
                 <div className="flex md:flex-row flex-col gap-8 ">

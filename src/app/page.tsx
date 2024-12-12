@@ -6,9 +6,12 @@ import Contact from './(pages)/contact'
 import Projects from './(pages)/projects'
 import Intro from './(pages)/intro'
 import Journey from './(pages)/journey'
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 export default function Home() {
-
+  
 
   return (
 

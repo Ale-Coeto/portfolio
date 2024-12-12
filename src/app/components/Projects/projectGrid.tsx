@@ -31,13 +31,13 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
     const tags_name = Array.from(tags.keys());
     const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
     const [animating, setAnimating] = useState(false);
-    const VIEW_LIMIT = 4;
+    const VIEW_LIMIT = 6;
 
     useEffect(() => {
         setAnimating(true);
         const timer = setTimeout(() => {
             setAnimating(false);
-        }, 300); 
+        }, 300);
 
         return () => clearTimeout(timer);
     }, [selectedTags]);
@@ -63,8 +63,8 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
                 <div className="flex flex-row justify-start md:justify-center flex-wrap gap-2 mb-5">
                     {tags_name.map((tag, key) => (
                         <div key={key} onClick={() => handleClick(tag)} className={clsx(
-                            'inline-block px-2 py-1 rounded-md mr-2 text-xs hover:underline hover:cursor-pointer', 
-                            tag && selectedTags.has(tag) ? tags_bg.get(tag) : '', 
+                            'inline-block px-2 py-1 rounded-md mr-2 text-xs hover:underline hover:cursor-pointer',
+                            tag && selectedTags.has(tag) ? tags_bg.get(tag) : '',
                             tag && selectedTags.has(tag) == false ? tags.get(tag) : '',
                             animating ? 'animate-fade-in' : 'animate-fade-out'
                         )}>

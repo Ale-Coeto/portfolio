@@ -1,7 +1,7 @@
 
 const EndLines = ({ top }: { top?: boolean }) => {
     return (
-        <div className="pl-28">
+        <div className="md:pl-28">
             <div className="flex flex-col items-center w-4">
                 {!top && (
                     <div className="h-20 border-l w-0 border-custom-text-gray" />
