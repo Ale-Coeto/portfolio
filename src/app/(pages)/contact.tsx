@@ -1,16 +1,11 @@
 'use client'
-import Tag from "../components/Contact/Tag";
 import Title from "../components/Title";
-import { BsEnvelope, BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Input from "../components/Contact/Input";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-import axios from "axios";
-import dotenv from "dotenv";
 import Divider from "../components/Divider";
-import { FaEnvelope } from "react-icons/fa";
 import Footer from "../components/Contact/Footer";
 
 
@@ -42,8 +37,18 @@ const Contact = () => {
                 email: data.email,
                 message: data.message
             };
+            const service = process.env.NEXT_PUBLIC_SERVICE_ID ?? ""
+            const template = process.env.NEXT_PUBLIC_TEMPLATE_ID ?? ""
+            const publicKey = process.env.NEXT_PUBLIC_P_KEY ?? ""
 
-            emailjs.send("serviceId", "templateId", templateParams, "emailjsKey")
+            // axios.post('/api/email', templateParams)
+            //     .then((res) => {
+            //         console.log(res);
+            //     }).catch((err) => {
+            //         console.log(err);
+            //     });
+
+            emailjs.send(service, template, templateParams, publicKey)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
                 }, (error) => {
