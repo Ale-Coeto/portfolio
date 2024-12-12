@@ -12,7 +12,7 @@ const useJourney = () => {
             title: 'Changemakers Social Challenge',
             description: 'Developed Mi Herencia to empower communities and promote turism in Mexico.',
             place: [],
-            image: '/images/journey/Changemakers.jpg',
+            image: '/images/journey/ChangeMakers.jpg',
             date: 'Nov 2024',
         },
         {
