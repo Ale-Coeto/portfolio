@@ -11,6 +11,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 import Divider from "../components/Divider";
 import { FaEnvelope } from "react-icons/fa";
+import Footer from "../components/Contact/Footer";
 
 
 
@@ -28,12 +29,6 @@ const Contact = () => {
     });
 
     const sendEmail: SubmitHandler<FieldValues> = (data) => {
-        // axios.post('/api/email', data)
-        // .then(() => {
-        //     toast.success("Registered successfully")
-        // })
-        // .catch(() => toast.error("Something went wrong"))
-        // .finally(() => setIsLoading(false));
 
         if (!data.name || !data.email || !data.message) {
             console.log("Missing fields")
@@ -49,11 +44,10 @@ const Contact = () => {
             };
 
             dotenv.config();
-            const templateId = 'template_p2w9hgo' || process.env.TEMPLATE_ID as string;
-            const serviceId = 'service_ukt3enr' || process.env.SERVICE_ID as string;
-            const emailjsKey = 'ue3nt1I8OfZhvIjye' || process.env.REACT_APP_EMAILJS_KEY as string;
+            const templateId =  process.env.TEMPLATE_ID as string;
+            const serviceId =  process.env.SERVICE_ID as string;
+            const emailjsKey = process.env.REACT_APP_EMAILJS_KEY as string;
 
-            //console.log(templateId, serviceId, emailjsKey)
 
             if (templateId !== undefined && serviceId != undefined && emailjsKey !== undefined) {
                 emailjs.send(serviceId, templateId, templateParams, emailjsKey)
@@ -101,20 +95,7 @@ const Contact = () => {
 
             </form>
             <Divider />
-            <div className="flex lg:flex-row flex-col justify-between text-left mt-8">
-                <div className="text-xl flex gap-3 ">
-                    {/* <h1 className="font-bold pb-1">
-                        Contact
-                    </h1> */}
-                    <Tag name="Ale-Coeto" icon={BsGithub} href="https://github.com/Ale-Coeto" />
-                    <Tag name="alecocoeto" icon={BsLinkedin} href="https://www.linkedin.com/in/alecoeto/" />
-                    <Tag name="alecoeto@hotmail.com" icon={FaEnvelope} href="mailto:alecoetos@gmail.com?subject=Contact portfolio&body=Contacting you through your portfolio" />
-                </div>
-                <div className="mt-5" />
-                <p className="text-sm">
-                    Last update: Oct 7, 2024
-                </p>
-            </div>
+            <Footer />
 
         </div>
     )

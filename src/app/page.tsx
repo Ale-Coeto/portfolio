@@ -5,6 +5,7 @@ import Divider from './components/Divider'
 import Contact from './(pages)/contact'
 import Projects from './(pages)/projects'
 import Intro from './(pages)/intro'
+import Journey from './(pages)/journey'
 
 export default function Home() {
 
@@ -22,6 +23,9 @@ export default function Home() {
       <Divider />
 
       <Projects />
+      <Divider />
+
+      <Journey />
       <Divider />
 
       <Contact />

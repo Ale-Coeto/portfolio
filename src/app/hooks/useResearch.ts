@@ -1,6 +1,12 @@
 const useResearch = () => {
     const research = [
         {
+            title: 'RoBorregos Team Paper',
+            description: 'Description of modules, research and development for the service robot FRIDA.',
+            image: '/images/projects/research/FRIDA.png',
+            href: '/pdfs/FRIDA2024.pdf'
+        },
+        {
             title: 'Motor Efficiency and Temperature',
             description: 'Research about the relationship between the efficiency of a DC motor and its temperature.',
             image: '/images/projects/research/Mono.png',

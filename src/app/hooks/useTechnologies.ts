@@ -26,7 +26,7 @@ const useTechnologies = () => {
         },
         {
             icon: '/images/icons/Tailwind.png',
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             time: '',
             level: 60
         },
@@ -44,7 +44,7 @@ const useTechnologies = () => {
         },
         {
             icon: '/images/icons/OnShape.png',
-            name: 'OnShape CAD',
+            name: 'OnShape',
             time: '',
             level: 60
         },

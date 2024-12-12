@@ -12,16 +12,16 @@ const Projects = () => {
 
     return (
         <div id="projects">
-            <Title number="03." title="Projects and Competitions" />
+            <Title number="03." title="Projects" />
 
-            <Subtitle title="Projects" header="projects"/>
+            {/* <Subtitle title="Projects" header="projects" /> */}
             <ProjectGrid items={projects} show_categories header="projects" />
 
-            <Subtitle title="Competitions" header="competitions"/>
+            {/* <Subtitle title="Competitions" header="competitions"/>
             <ProjectGrid items={competitions} header="competitions" />
 
             <Subtitle title="Research projects" header="research"/>
-            <ProjectGrid items={research} short={true} header="research" />
+            <ProjectGrid items={research} short={true} header="research" /> */}
 
         </div>
     )

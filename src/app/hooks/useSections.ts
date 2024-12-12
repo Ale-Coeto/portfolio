@@ -18,6 +18,11 @@ const useSections = () => {
         },
         {
             num: 4,
+            label: 'Journey',
+            href: '#journey'
+        },
+        {
+            num: 5,
             label: 'Contact',
             href: '#contact'
         }

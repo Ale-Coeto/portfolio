@@ -17,18 +17,18 @@ const IconElement: React.FC<IconElementProps> = ({
     size,
 }) => {
     return (
-        <div className="flex flex-row items-center bg-custom-light-gray p-2 rounded-xl m-2 shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div className="flex flex-row items-center bg-custom-light-gray p-2 pr-6 rounded-full m-2 shadow-md hover:shadow-lg transition-shadow duration-300">
             <RoundedIcon icon={icon} size={size} />
             <div className='flex flex-col ml-0 '> {/* Added margin-left for spacing */}
-                <div className='font-nunito text-base font-semibold'> {/* Added a larger font size */}
+                <div className='font-nunito text-sm font-semibold'> {/* Added a larger font size */}
                     {name}
                 </div>
                 {time && (
-                    <div className="text-custom-text-gray font-fira-code text-sm"> {/* Added margin-top for spacing */}
-                    {time}
+                    <div className="text-custom-text-gray font-fira-code text-xs"> {/* Added margin-top for spacing */}
+                        {time}
                     </div>
                 )}
-               
+
             </div>
         </div>
     )

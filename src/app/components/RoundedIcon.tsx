@@ -24,13 +24,13 @@ const RoundedIcon: React.FC<RoundedIconProps> = ({ icon, color, size }) => {
                 !color && 'bg-gray-200',
                 !size && 'h-12 w-12 mr-3',
                 size == 'xl' && 'h-16 w-16 p-0',
-                size == 'sm' && 'h-8 w-8 mr-3',
+                size == 'sm' && 'h-8 w-8',
                 // loading && 'animate-pulse',
             )}
         >
             <Image className={clsx('object-cover',
                 // loading && 'animate-pulse',
-                size == 'xl' ? 'scale-80' : "scale-100"
+                size == 'xl' ? 'scale-80' : size == 'sm' ? 'scale-75' : "scale-90"
             )} fill src={icon} referrerPolicy="no-referrer" alt="Image" />
         </div>
     )

@@ -13,7 +13,7 @@ const useProjects = () => {
         {
             title: 'Security system IOT',
             description: 'Security system prototype for the elder. Access through face recognition, monitor with sensors and display in webpage.',
-            tools: "React, Typescript, AWS EC2, Docker, Flask, Face-recognition, AWS Websocket API, Google OAuth, Tailwind, SQL, tRPC, Arduino",
+            tools: "React, Typescript, Docker, Flask, AWS EC2 & Websocket API, Face-recognition, Google OAuth, Tailwind, SQL, tRPC, Arduino",
             image: '/images/projects/IOT.png',
             href: 'https://github.com/Ale-Coeto/IOT_security-system',
             categories : ["Favorite", "Web", "IOT", "Computer vision"]
@@ -49,6 +49,22 @@ const useProjects = () => {
             image: '/images/projects/Candidates.png',
             href: 'https://github.com/RoBorregos/CandidatesDashboard',
             categories: ["Web"]
+        },
+        {
+          title: 'Herencia Viva',
+          description: 'Mobile app to promote turism and heritage in Mexico.',
+          tools: 'Swift, SwiftData, ARKit',
+          image: '/images/projects/Nojoch.png',
+          href: 'https://github.com/Fausto1712/Nojoch',
+          categories: ["Mobile"]
+        },
+        {
+            title: 'Papalote Museo del Niño',
+            description: 'Mobile app for the Papalote Museum. Enhances experience by providing overview of attractions, a map and an awards system. Also developed web app for admins.',
+            tools: 'Swift, Swift Data, Typescript, React, NextJs, TailwindCSS, tRPC.',
+            image: '/images/projects/Papalote.png',
+            href: 'https://github.com/Ale-Coeto/App_Papalote',
+            categories: ["Mobile" , "Web"]
         },
         {
             title: 'Smart Resource Manager',
@@ -115,12 +131,52 @@ const useProjects = () => {
             categories: ["IOT"]
         },
         {
+            title: 'RoBorregos Team Paper',
+            description: 'Description of modules, research and development for the service robot FRIDA.',
+            image: '/images/projects/research/FRIDA.png',
+            tools: 'ROS',
+            href: '/pdfs/FRIDA2024.pdf',
+            categories: ["Research", "Robotics"]
+        },
+        {
+            title: 'Motor Efficiency and Temperature',
+            description: 'Research about the relationship between the efficiency of a DC motor and its temperature.',
+            image: '/images/projects/research/Mono.png',
+            tools: 'Physics',
+            href: '/pdfs/Monografia.pdf',
+            categories: ["Research"]
+        },
+        {
             title: "Matlab projects",
             description: 'Matlab simulation proyects regarding kinematics, dynamics and energy conservation topics.',
             tools: "Matlab",
             image: '/images/projects/Matlab.png',
             href: 'https://github.com/Ale-Coeto/Projectos-Matlab',
-            categories: ["Others"]
+            categories: ["Research"]
+        },
+        {
+            title: 'Elipse area and matrices',
+            description: 'Mathemeatical exploration with the objective of finding a method to calculate the area of an eclipse through lineal algebra.',
+            image: '/images/projects/research/Mate.png',
+            tools: "Math",
+            href: '/pdfs/Mate.pdf',
+            categories: ["Research"]
+        },
+        {
+            title: "Sales and social media marketing",
+            description: 'Reasearch that evaluates the implementation of social media marketing strategies to increment the sales of a business.',
+            image: '/images/projects/research/Business.png',
+            tools: "Business and Management, Marketing",
+            href: '/pdfs/Business.pdf',
+            categories: ["Research"]
+        },
+        {
+            title: "Damped pendulum",
+            description: 'Research with the objective of finding the relation between the mechanical energy and the number of cycles of a damped pendulum.',
+            image: '/images/projects/research/Physics.png',
+            tools: 'Physics',
+            href: '/pdfs/Fisica.pdf',
+            categories: ["Research"]
         }
     ];
 

@@ -30,15 +30,14 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
     const [all, setAll] = useState(true);
     const tags_name = Array.from(tags.keys());
     const [selectedTags, setSelectedTags] = useState<Set<string>>(new Set());
-    const [displayedItems, setDisplayedItems] = useState(items.length);
-
     const [animating, setAnimating] = useState(false);
+    const VIEW_LIMIT = 4;
 
     useEffect(() => {
         setAnimating(true);
         const timer = setTimeout(() => {
             setAnimating(false);
-        }, 300); // Match this duration with your CSS animation duration
+        }, 300); 
 
         return () => clearTimeout(timer);
     }, [selectedTags]);
@@ -59,13 +58,13 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
     }
 
     return (
-        <div className="md:px-16 text-sm">
+        <div className="md:px-10 text-sm">
             {show_categories && (
                 <div className="flex flex-row justify-start md:justify-center flex-wrap gap-2 mb-5">
                     {tags_name.map((tag, key) => (
                         <div key={key} onClick={() => handleClick(tag)} className={clsx(
-                            'inline-block px-2 py-1 rounded-md mr-2 text-xs hover:underline hover:cursor-pointer', // Keep existing classes
-                            tag && selectedTags.has(tag) ? tags_bg.get(tag) : '', // Get the corresponding color from the tags map or return an empty string if tag is undefined
+                            'inline-block px-2 py-1 rounded-md mr-2 text-xs hover:underline hover:cursor-pointer', 
+                            tag && selectedTags.has(tag) ? tags_bg.get(tag) : '', 
                             tag && selectedTags.has(tag) == false ? tags.get(tag) : '',
                             animating ? 'animate-fade-in' : 'animate-fade-out'
                         )}>
@@ -86,7 +85,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
                                 selectedTags.size === 0 ||
                                 (item.categories && item.categories.some(tag => selectedTags.has(tag)))
                             )
-                                .slice(0, 6).map((item, key) => (
+                                .slice(0, VIEW_LIMIT).map((item, key) => (
                                     //check if the item has the selected tags
                                     <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place} categories={item.categories} />
                                 ))}
@@ -94,7 +93,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
                         {items.filter(item =>
                             selectedTags.size === 0 ||
                             (item.categories && item.categories.some(tag => selectedTags.has(tag)))
-                        ).length > 6 && (
+                        ).length > VIEW_LIMIT && (
                                 <button onClick={() => setAll(false)} className="w-full flex flex-row justify-center align-center items-center underline pt-6 text-custom-text-dark-gray hover:text-custom-text-gray">
                                     <BsPlus className="text-2xl mr-2" />
                                     <div>

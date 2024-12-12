@@ -1,5 +1,6 @@
 import Subtitle from "../Subtitle";
 import IconElement from "./IconElement";
+import TechElement from "./TechElement";
 
 interface IconGridProps {
     title: string,
@@ -16,16 +17,27 @@ const IconGrid: React.FC<IconGridProps> = ({ title, items, size }) => {
     return (
         <div>
             <Subtitle title={title} />
-            <div className=" grid px-8 md:px-12  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  2xl:grid-cols-5" >
+            <div className={`flex flex-wrap `} >
                 {items.map((item, key) => (
-                    <IconElement
-                        key={key}
-                        name={item.name}
-                        icon={item.icon}
-                        time={item.time}
-                        level={item.level}
-                        size={size}
-                    />
+                    size ? (
+                        <TechElement
+                            key={key}
+                            name={item.name}
+                            icon={item.icon}
+                            time={item.time}
+                            level={item.level}
+                            size={size}
+                        />
+                    ) : (
+                        <IconElement
+                            key={key}
+                            name={item.name}
+                            icon={item.icon}
+                            time={item.time}
+                            level={item.level}
+                            size={size}
+                        />
+                    )
                 ))}
 
             </div>
