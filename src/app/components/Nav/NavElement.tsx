@@ -1,5 +1,4 @@
 import clsx from "clsx"
-import { Link } from "react-scroll"
 
 interface NavElementProps {
     num: number
@@ -12,14 +11,12 @@ const NavElement: React.FC<NavElementProps> = ({ num, label, href, mobile }) => 
 
     return (
         <div className={clsx(mobile && 'text-xl font-light py-1 ', "hover:underline")}>
-            {/* <Link to={label} smooth> */}
             <a href={href}>
                 <span className="text-custom-green mr-1 hover:no-underline">
                     0{num}.
                 </span>
                 {label}
             </a>
-            {/* </Link> */}
         </div>
     )
 }

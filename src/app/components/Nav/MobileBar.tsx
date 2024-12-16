@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import useRoutes from "@/app/hooks/useSections";
 import NavElement from "./NavElement";
-import clsx from "clsx";
 import { IoIosArrowUp } from "react-icons/io";
 
 const MobileBar = () => {

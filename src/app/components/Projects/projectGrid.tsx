@@ -115,7 +115,6 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
                             (item.categories && item.categories.some(tag => selectedTags.has(tag)))
                         )
                             .map((item, key) => (
-                                //check if the item has the selected tags
                                 <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place} categories={item.categories} />
                             ))}
                     </div>

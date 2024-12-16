@@ -15,9 +15,7 @@ const Tag: React.FC<TagProps> = ({
 }) => {
     return (
         <div className={clsx(`
-            flex align-middle items-center justify-center
-            
-        `,
+            flex align-middle items-center justify-center`,
             href && 'hover:underline'
         )}
 

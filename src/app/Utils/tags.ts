@@ -1,4 +1,4 @@
-//colors for each tag
+// Colors for each tag
 export const tags = new Map<string, string>([
     ["Favorite", "border border-yellow-500 text-yellow-500"],
     ["Web", "border text-sky-300 border-sky-300 "],

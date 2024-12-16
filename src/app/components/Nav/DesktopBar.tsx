@@ -1,6 +1,6 @@
 import useRoutes from "@/app/hooks/useSections";
 import NavElement from "./NavElement";
-import { BsGithub, BsHouse } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { IoIosArrowUp } from "react-icons/io";
 import Tag from "../Contact/Tag";
 
@@ -12,9 +12,6 @@ const DesktopBar = () => {
             <div className="fixed border-b z-50 w-full top-0 pt-1 h-16  drop-shadow-sm opacity-[0.97] backdrop-blur-lg" >
                 <nav className="flex justify-between flex-row mt-4 mx-8 text-white">
                     <a href="#">
-                        {/* <div className=" bg-sky-500 rounded-md px-2 text-xl font-nunito text-custom-dark-gray font-semibold">
-                            AC
-                        </div> */}
                         <div className="rounded-md px-2 text-xl font-mono text-sky-500 ">
                             ACS
                         </div>

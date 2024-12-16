@@ -1,5 +1,4 @@
 import clsx from "clsx"
-import { useEffect, useState } from "react";
 
 interface InfoDisplayProps {
     title: string,

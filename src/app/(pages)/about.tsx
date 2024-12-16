@@ -12,9 +12,9 @@ const About = () => {
             <Title number="01." title="About me" />
 
             <div className="flex flex-row justify-between gap-20 mb-10 max-md:flex-col">
-                <p className=""> {/* basis-4/6 */}
+                <p className=""> 
                     I&apos;m a Computer Science and Technology student at Tecnológico de Monterrey,
-                    Software Developer in the robotics team Roborregos, vicepresident of the student group
+                    Software Developer and president of the robotics team Roborregos, ex-vicepresident of the student group
                     Women in Technology and mentor of the FIRST robotics team Voltec. I love to face new challenges and look forward to sharing my passion for robotics and
                     programming with the rest of the community.
                 </p>

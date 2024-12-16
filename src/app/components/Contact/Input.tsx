@@ -1,5 +1,4 @@
 'use client';
-import clsx from "clsx";
 import { FieldValues, UseFormRegister } from "react-hook-form";
 
 interface InputProps {

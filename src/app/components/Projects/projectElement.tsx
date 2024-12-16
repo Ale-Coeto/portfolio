@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import Line from "./Line";
 import Thumbnail from "./Thumbnail";
 import ProjectFooter from "./ProjectFooter";

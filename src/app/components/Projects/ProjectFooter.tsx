@@ -8,10 +8,7 @@ interface ProjectFooterProps {
     categories?: string[]
 }
 
-
-
 const ProjectFooter: React.FC<ProjectFooterProps> = ({ tools, place, categories }) => {
-
 
     return (
         <div>

@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Contact/Footer"
 import JourneyEvent from "@/app/components/Journey/Event"
 import useJourney from "@/app/hooks/useJourney"
 import EndLines from "@/app/components/Journey/EndLines"
@@ -14,10 +13,8 @@ const Journey = () => {
             <Title number="04." title="My Journey" />
 
             <div className="invisible md:visible absolute bg-custom-light-gray p-2 rounded-md text-sm">
-
                 <LegendItem label="Competitions" color="bg-sky-500" />
                 <LegendItem label="Events" color="bg-custom-green" />
-
             </div>
 
             <div className="md:translate-x-1/4 flex flex-col justify-start  h-[70vh] overflow-scroll">
@@ -27,7 +24,6 @@ const Journey = () => {
                 ))}
                 <EndLines />
             </div>
-
         </div>
 
     )

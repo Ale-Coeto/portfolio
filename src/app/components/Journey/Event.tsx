@@ -12,9 +12,7 @@ const
 
         return (
             <div className="flex flex-row ">
-
                 <div className=" flex flex-row gap-6 justify-left items-center md:pl-28 relative">
-
                     <div className="font-fira-code text-sm text-custom-text-dark-gray absolute md:-translate-x-28 md:-translate-y-0 -translate-y-16 translate-x-10">
                         {date}
                     </div>
@@ -45,16 +43,8 @@ const
                                 </div>
                             )}
                         </div>
-
-
-
-
                     </div>
                 </div>
-
-                {/* <div className="mt-2 p-4 h-52 translate-x-32 -translate-y-20 bg-gray-200 text-gray-800 rounded shadow hidden peer-hover:block absolute">
-                <img className="h-52" src={image} />
-            </div> */}
             </div>
         )
     }

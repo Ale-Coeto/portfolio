@@ -15,7 +15,7 @@ import Footer from "../components/Contact/Footer";
 const Contact = () => {
 
     const [isLoading, setIsLoading] = useState(false);
-    const { register, handleSubmit, setValue, formState: { errors } } = useForm<FieldValues>({
+    const { register, handleSubmit, formState: { errors } } = useForm<FieldValues>({
         defaultValues: {
             name: '',
             email: '',
@@ -40,13 +40,6 @@ const Contact = () => {
             const service = process.env.NEXT_PUBLIC_SERVICE_ID ?? ""
             const template = process.env.NEXT_PUBLIC_TEMPLATE_ID ?? ""
             const publicKey = process.env.NEXT_PUBLIC_P_KEY ?? ""
-
-            // axios.post('/api/email', templateParams)
-            //     .then((res) => {
-            //         console.log(res);
-            //     }).catch((err) => {
-            //         console.log(err);
-            //     });
 
             emailjs.send(service, template, templateParams, publicKey)
                 .then((response) => {
@@ -78,9 +71,6 @@ const Contact = () => {
 
                 </div>
 
-                {/* <button type="submit" className=" bg-custom-text-dark-gray px-2 text-custom-dark-gray rounded-md font-fira-code font-semibold hover:underline">
-                    Send
-                </button> */}
                 <div className="flex justify-end">
                     <button className=" bg-sky-500 rounded-full px-3 py-1 font-nunito text-custom-dark-gray font-semibold">
                         Send
