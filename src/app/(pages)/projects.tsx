@@ -2,13 +2,13 @@ import Title from "../components/Title";
 import useProjects from "../hooks/useProjects";
 import ProjectGrid from "../components/Projects/projectGrid";
 import Subtitle from "../components/Subtitle";
-import useCompetitions from "../hooks/useCompetitions";
-import useResearch from "../hooks/useResearch";
+// import useCompetitions from "../hooks/useCompetitions";
+// import useResearch from "../hooks/useResearch";
 
 const Projects = () => {
     const projects = useProjects();
-    const competitions = useCompetitions();
-    const research = useResearch();
+    // const competitions = useCompetitions();
+    // const research = useResearch();
 
     return (
         <div id="projects">
