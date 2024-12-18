@@ -2,7 +2,7 @@ const useJourney = () => {
     const journey = [
         {
             title: 'ICPC Mexico National Finals',
-            description: 'Actively competing with a team of three in ICPC competitive programming contests.',
+            description: 'Competed in the Mexico Finals of the ICPC competitive programming competition.',
             date: 'Nov 2024',
             place: ["Top 25"],
             image: '/images/journey/ICPC2024.png',
@@ -10,7 +10,7 @@ const useJourney = () => {
         },
         {
             title: 'Changemakers Social Challenge',
-            description: 'Developed Mi Herencia to empower communities and promote turism in Mexico.',
+            description: 'Developed Mi Herencia movile app to empower communities and promote turism in Mexico.',
             place: [],
             image: '/images/journey/ChangeMakers.jpg',
             date: 'Nov 2024',
@@ -43,7 +43,7 @@ const useJourney = () => {
         },
         {
             title: 'RoboCup@Home',
-            description: 'Developed computer vision algorithms for a general purpose service robot.',
+            description: 'Developed computer vision algorithms for a general purpose service robot, competing in the Mexican Robotics Tournament.',
             place: ["2nd National"],
             date: 'Apr 2024',
             image: '/images/journey/Home.jpeg',
@@ -53,7 +53,7 @@ const useJourney = () => {
             title: 'ICPC Mexico Grand Prix',
             description: 'Actively competing with a team of three in ICPC competitive programming contests.',
             tools: "C++, Java",
-            place: ["3rd place on campus ICPC Mexico Grand Prix"],
+            place: ["3rd place on campus"],
             date: 'Sept 2023',
             image: '/images/journey/ICPC.jpg',
             href: 'https://Icpc.global/'
@@ -62,14 +62,14 @@ const useJourney = () => {
             title: 'Hack Mty 2023',
             description: 'Developed research assistant with my team, earning 1st place in the Softek Challenge',
             tools: "Python, OpenCv",
-            place: ["7th International"],
+            place: ["1st place"],
             date: 'Sept 2023',
             image: '/images/journey/HackMty.jpg',
             href: 'https://github.com/cyberbotics/wrestling'
         },
         {
             title: 'Robocup Soccer Lightweight',
-            description: 'Programmed the movement, sensor libraries, vision and algorithms of two soccer playing robots.',
+            description: 'Programmed two soccer playing robots, competing in the Mexican Robotics Tournament',
             tools: "Arduino CLI, CPP, Micro-python",
             place: ["3rd National", "2nd Regional"],
             image: '/images/journey/Rbrgs.png',
@@ -84,7 +84,7 @@ const useJourney = () => {
         },
         {
             title: 'Hackathon Caterpillar',
-            description: 'Developed a smart shower prototype to optimize water consumption.',
+            description: 'Developed a smart shower prototype to optimize water consumption. Interviewed with Bar Emprende, summarized in the magazine MIT Sloan Management Review.',
             place: ["1st"],
             image: '/images/journey/Caterpillar2.png',
             date: 'Jul 2022',
@@ -110,7 +110,7 @@ const useJourney = () => {
         },
         {
             title: 'MIT Patrones Hermosos',
-            description: 'Summer camp for girls to learn about programming.',
+            description: 'Summer camp organized by MIT focused on problem solving and programming logic.',
             date: 'May 2019',
             image: '/images/journey/mit.jpg',
             href: '',
