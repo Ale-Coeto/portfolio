@@ -1,4 +1,3 @@
-import { title } from "process";
 
 const useProjects = () => {
     const projects = [
@@ -16,7 +15,7 @@ const useProjects = () => {
             tools: "React, Typescript, Docker, Flask, AWS EC2 & Websocket API, Face-recognition, Google OAuth, Tailwind, SQL, tRPC, Arduino",
             image: '/images/projects/IOT.png',
             href: 'https://github.com/Ale-Coeto/IOT_security-system',
-            categories : ["Favorite", "Web", "IOT", "Computer vision"]
+            categories : ["Favorite", "Web", "IOT", "Computer vision", "Cloud"]
         },
         {
             title: 'FridaGO',
@@ -66,14 +65,14 @@ const useProjects = () => {
             href: 'https://github.com/Ale-Coeto/App_Papalote',
             categories: ["Mobile" , "Web"]
         },
-        {
-            title: 'Smart Resource Manager',
-            description: 'Web app to monitor energy consumption, get optimized routes and classify trash. Project for CEMEX Hack 2023.',
-            tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, tRPC, AWS Websocket API",
-            image: '/images/projects/Cemex.png',
-            href: 'https://github.com/Oscar-gg/cemex_hacks_2023',
-            categories: ["Web"]
-        },
+        // {
+        //     title: 'Smart Resource Manager',
+        //     description: 'Web app to monitor energy consumption, get optimized routes and classify trash. Project for CEMEX Hack 2023.',
+        //     tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, tRPC, AWS Websocket API",
+        //     image: '/images/projects/Cemex.png',
+        //     href: 'https://github.com/Oscar-gg/cemex_hacks_2023',
+        //     categories: ["Web"]
+        // },
         {
             title: 'AWAQ Dashboard',
             description: 'Dashboard to visualize user progress as they go through their OnBoarding process with AWAQ.',
@@ -98,14 +97,14 @@ const useProjects = () => {
             href: 'https://github.com/Ale-Coeto/movie-tracker',
             categories: ["Web"]
         },
-        {
-            title: 'Roborregos Inventory',
-            description: 'Authentication and registration of users for the inventory webpage of Roborregos.',
-            tools: "React, Typescript, Prisma, NextJs, Azure AD, TailwindCSS",
-            image: '/images/projects/Inventory.png',
-            href: 'https://robo-almacen.vercel.app/',
-            categories: ["Web", "IOT"]
-        },
+        // {
+        //     title: 'Roborregos Inventory',
+        //     description: 'Authentication and registration of users for the inventory webpage of Roborregos.',
+        //     tools: "React, Typescript, Prisma, NextJs, Azure AD, TailwindCSS",
+        //     image: '/images/projects/Inventory.png',
+        //     href: 'https://robo-almacen.vercel.app/',
+        //     categories: ["Web", "IOT"]
+        // },
         {
             title: 'Hackathon Caterpillar',
             description: 'Smart shower head prototype. Project presented in an interview with Bar Emprende, summarized in the magazine MIT Sloan Management Review.',
