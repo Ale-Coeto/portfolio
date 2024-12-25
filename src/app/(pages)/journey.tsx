@@ -17,7 +17,7 @@ const Journey = () => {
                 <LegendItem label="Events" color="bg-custom-green" />
             </div>
 
-            <div className="md:translate-x-1/4 flex flex-col justify-start  h-[70vh] overflow-scroll">
+            <div className="md:translate-x-1/4 md:w-4/5 flex flex-col justify-start  h-[70vh] overflow-y-scroll">
                 <EndLines top={true} />
                 {journey.map((event, key) => (
                     <JourneyEvent key={key} title={event.title} description={event.description} date={event.date} image={event.image} href={event.href} places={event.place} />
