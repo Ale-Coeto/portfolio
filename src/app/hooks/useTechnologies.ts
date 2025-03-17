@@ -31,6 +31,12 @@ const useTechnologies = () => {
             level: 60
         },
         {
+            icon: '/images/icons/Docker.png',
+            name: 'Docker',
+            time: '',
+            level: 50
+        },
+        {
             icon: '/images/icons/ROS1.png',
             name: 'ROS',
             time: '',

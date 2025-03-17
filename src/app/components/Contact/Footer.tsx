@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div className="mt-5" />
             <p className="text-sm">
-                Last update: Dec 15, 2024
+                Last update: Mar 16, 2025
             </p>
         </div>
     )

@@ -20,16 +20,22 @@ const usePLanguages = () => {
             level: 50
         },
         {
+            icon: '/images/icons/Typescript.png',
+            name: 'Typescript',
+            time: '2 years',
+            level: 50
+        },
+        {
             icon: '/images/icons/Javascript.png',
             name: 'JavaScript',
             time: '1 year',
             level: 50
         },
         {
-            icon: '/images/icons/Typescript.png',
-            name: 'Typescript',
+            icon: '/images/icons/Swift.png',
+            name: 'Swift',
             time: '1 year',
-            level: 50
+            level: 80
         },
         {
             icon: '/images/icons/Matlab.png',
@@ -37,12 +43,6 @@ const usePLanguages = () => {
             time: '< 1 year',
             level: 80
         },
-        {
-            icon: '/images/icons/Swift.png',
-            name: 'Swift',
-            time: '< 1 year',
-            level: 80
-        }
     ]
 
     return pLanguages;

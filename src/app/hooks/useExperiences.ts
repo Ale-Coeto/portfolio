@@ -1,5 +1,17 @@
 const useExperiences = () => {
-    const experience = [
+    const work = [
+        {
+            title: "Oracle",
+            position: "Software Engineering Intern",
+            date: "Feb 2025 - Present",
+            info: "Part time SWE intern of the 5G Networks team.",
+            bullets: [
+                "Working with backend services.",
+            ],
+            images: [],
+            icon: "/images/logos/Oracle.jpeg",
+            iconColor: "black"
+        },
         {
             title: "Google",
             position: "STEP Intern",
@@ -10,16 +22,14 @@ const useExperiences = () => {
                 "Developed new “Show last known location” feature for company-owned lost devices through the Admin Console, displaying a dialog containing a map with a marker and a window with lost details and geocode address after fetching the info from the device.",
                 "Completed design process and full stack implementation using java, javascript, gRPC, Google Maps API and internal frameworks."
             ],
-            images: [
-                
-            ],
+            images: [],
             icon: "/images/logos/Google.jpeg",
             iconColor: "black"
         },
         {
-            title: "On Campus",
-            position: "DevOps Intern",
-            date: "Feb 2024 - Present",
+            title: "ITESM",
+            position: "DevOps OnCampus Intern",
+            date: "Feb 2024 - Dec 2025",
             info: "DevOps at Crowd Counting project, aiming to collect environment information from a park through cameras and sensors."
             ,
             bullets: [
@@ -33,6 +43,9 @@ const useExperiences = () => {
             icon: "/images/logos/Tec.png",
             iconColor: "white"
         },
+    ]
+
+    const leadership = [
         {
             title: "Roborregos",
             position: "President and Software Developer",
@@ -40,12 +53,9 @@ const useExperiences = () => {
             info: "Software developer and president of the representative Robotics Team from Tecnológico de Monterrey."
             ,
             bullets: [
-                "Competed in regional and national robotics tournaments representing ITESM.",
-                "Currently part of the Robocup @Home team as software developer and project manager of the computer vision subteam.",
-                "Working on the authentication and registration of users for an inventory webpage.",
-                "Programmed the movement, sensor libraries and algorithms of two soccer playing robots, using arduino CLI, C++ and micro-python for computer vision algorithms.",
-                "Achieved 3rd place with my team (of three) in the National Mexican Robotics Tournament in the Soccer Lightweight category.",
-                "Achieved 2nd place with a team of 12 in the National Robotics Tournament in the Robocup @Home category, classifying to the international competition.",
+                "Competed in regional, national and international robotics tournaments representing ITESM.",
+                "Leading the computer vision team for the RoboCup @Home competition.",
+                "Programmed soccer playing robots, achieving 3rd national place in the Robocup Soccer Lightweight competition.",
                 "Leading and organizing the yearly on-campus robotics competition Candidates 2024, with over 300 participants."
             ],
             images: [
@@ -64,7 +74,8 @@ const useExperiences = () => {
             bullets: [
                 "Coordinated the student group Women in Technology from Tecnológico de Monterrey as vicepresident.",
                 "Organizing events with my team to enhance the progress of women in tech and promote inclusiveness, impacting over 100 students",
-                "Taught programming and app development with the MIT App Inventor tool to 20 middle school students."
+                "Taught programming and app development with the MIT App Inventor tool to 20 middle school students.",
+                "Lead the development of the group's webpage."
             ],
             images: [],
             icon: "/images/logos/Wit.png",
@@ -75,11 +86,10 @@ const useExperiences = () => {
             title: "Voltec",
             position: "Mentor and Ex-Team Leader",
             date: "Aug 2019 - June 2024",
-            info: "Leading the engineering department of the FIRST high school team VOLTEC Robotics",
+            info: "Led the engineering department of the FIRST high school team VOLTEC Robotics",
             bullets: [
-                "Teaching countinously programming and robotics to more than 20 3rd grade students and over 20 highschool students.",
+                "Taught programming and robotics to more than 20 3rd grade students and over 20 highschool students.",
                 "Mentoring the FIRST FTC (9 students) and FRC (over 20 students) teams.",
-                "Achieved top 10 in the national FTC (2023) competition and earning a place on the FRC world championship (2023).",
                 "Participated in the FIRST Robotics Competition (2019-2022) as robot driver and engineering leader"
             ],
             images: [
@@ -107,7 +117,10 @@ const useExperiences = () => {
         }
     ]
 
-    return experience;
+    return {
+        "work": work,
+        "leadership": leadership
+    };
 }
 
 export default useExperiences;
