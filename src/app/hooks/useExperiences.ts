@@ -9,8 +9,8 @@ const useExperiences = () => {
                 "Working with backend services.",
             ],
             images: [],
-            icon: "/images/logos/Oracle.jpeg",
-            iconColor: "black"
+            icon: "/images/logos/Oracle.png",
+            iconColor: "white"
         },
         {
             title: "Google",
