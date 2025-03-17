@@ -19,7 +19,7 @@ interface InfoDisplayProps {
         iconColor: string
     }
 }
-const infoDisplay: React.FC<InfoDisplayProps> = ({
+const InfoDisplay: React.FC<InfoDisplayProps> = ({
     item
 }) => {
     const [seeMore, setSeeMore] = useState<boolean>(false);
@@ -76,4 +76,4 @@ const infoDisplay: React.FC<InfoDisplayProps> = ({
     )
 }
 
-export default infoDisplay;
+export default InfoDisplay;
