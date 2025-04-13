@@ -2,7 +2,15 @@
 const useProjects = () => {
     const projects = [
         {
-            title: 'Swift Student Challenge',
+            title: 'Swift Student Challenge 2025',
+            description: 'App that provide tools for visually impaired people: colorblind mode to distinguish colored routes and guide mode to provide real-time audio guidance.\n Winner 2025!',
+            tools: "Swift, Vision, CreateML/CoreML, AVFoundation, Core Image, Combine, UIKit, Roboflow, XCode",
+            image: '/images/projects/OpenClimb.png',
+            href: 'https://github.com/Ale-Coeto/OpenClimb',
+            categories: ["Favorite", "Mobile", "Computer vision"]
+        },
+        {
+            title: 'Swift Student Challenge 2024',
             description: 'Introduction to climbing app, providing tips, tracking user progress and showing AR views of different climbing holds.\n Distinguished winner 2024!',
             tools: "Swift, ARKit, Reality, Combine, Core Data, Charts, Blender, Playgrounds, XCode",
             image: '/images/projects/Swift.png',
@@ -19,7 +27,7 @@ const useProjects = () => {
         },
         {
             title: 'FridaGO',
-            description: 'Web app to revolutionize market experience and API to analyze supermarket camera feed',
+            description: 'Web app to revolutionize market experience and API to analyze supermarket camera feed.',
             tools: "Yolo, OpenCV, FastAPI, OpenVino, React, Typescript, Prisma, TailwindCSS, tRPC, Docker, Clustering",
             image: '/images/projects/FridaGo.png',
             href: 'https://github.com/Ale-Coeto/FridaGo-API',
@@ -43,7 +51,7 @@ const useProjects = () => {
         },
         {
             title: 'Candidates Dashboard',
-            description: 'Web app for a robotics competition. Displays general information, scores and schedule for each team',
+            description: 'Web app for a robotics competition. Displays general information, scores and schedule for each team.',
             tools: "React, Typescript, Prisma, NextJs, TailwindCSS, NextAuth, tRPC, PostgreSQL",
             image: '/images/projects/Candidates.png',
             href: 'https://github.com/RoBorregos/CandidatesDashboard',
@@ -79,6 +87,14 @@ const useProjects = () => {
             tools: "ASP.NET, Bootstraps, C#, MySQL,Tailwind, Lookerstudio",
             image: '/images/projects/Awaq.png',
             href: 'https://github.com/Ale-Coeto/awak-dashboard',
+            categories: ["Web"]
+        },
+        {
+            title: 'Women in Technology',
+            description: 'Webpage of the student group WIT (Women in Tech) from ITESM. Provides information about the group and its events.',
+            tools: "React, Typescript, NextJs, TailwindCSS",
+            image: '/images/projects/Wit.png',
+            href: 'https://witmty.com/',
             categories: ["Web"]
         },
         {

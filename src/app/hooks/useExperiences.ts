@@ -6,7 +6,7 @@ const useExperiences = () => {
             date: "Feb 2025 - Present",
             info: "Part time SWE intern of the 5G Networks team.",
             bullets: [
-                "Working with backend services.",
+                "Working with backend micro-services.",
             ],
             images: [],
             icon: "/images/logos/Oracle.png",
