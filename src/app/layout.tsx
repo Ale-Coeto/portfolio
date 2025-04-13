@@ -17,12 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='scroll-smooth scroll-pt-24'>
+    <html lang="en" className='scroll-smooth scroll-pt-24 bg-custom-dark-gray'>
       <body className={inter.className}>{children}
-        <ToasterContext />
         <NavBar >
-      </NavBar>
-    </body>
+          <ToasterContext />
+        </NavBar>
+      </body>
     </html >
   )
 }

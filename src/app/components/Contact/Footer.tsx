@@ -1,8 +1,33 @@
+"use client";
+
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 import Tag from "./Tag"
 import { FaEnvelope } from "react-icons/fa"
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+    const [lastUpdate, setLastUpdate] = useState("");
+
+    useEffect(() => {
+        const fetchLastUpdate = async () => {
+            try {
+                const res = await fetch("https://api.github.com/repos/Ale-Coeto/portfolio/commits");
+                const data = await res.json();
+                const dateStr = data[0].commit.author.date;
+                const date = new Date(dateStr).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                });
+                setLastUpdate(date);
+            } catch (err) {
+                console.error("Failed to fetch commit date", err);
+            }
+        };
+
+        fetchLastUpdate();
+    }, []);
+
     return (
         <div className="flex lg:flex-row flex-col justify-between text-left mt-8">
             <div className="text-xl flex gap-3 ">
@@ -12,7 +37,7 @@ const Footer = () => {
             </div>
             <div className="mt-5" />
             <p className="text-sm">
-                Last update: Mar 16, 2025
+                Last update: {lastUpdate || "Loading..."}
             </p>
         </div>
     )

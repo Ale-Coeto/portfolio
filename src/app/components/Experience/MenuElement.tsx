@@ -1,19 +1,25 @@
 import clsx from "clsx"
+import RoundedIcon from "../RoundedIcon"
 
 interface InfoDisplayProps {
     title: string,
     selected?: boolean
+    color: string
+    icon: string
     id?: number
 }
 
-const MenuBar: React.FC<InfoDisplayProps> = ({ title, selected, id }) => {
+const MenuBar: React.FC<InfoDisplayProps> = ({ title, selected, color, icon }) => {
 
     return (
         <div className={clsx(`
-       w-full md:pr-8  border-l-2 pl-4 py-2  hover:bg-custom-light-gray mr-10`,
+       flex flex-row items-center gap-2 w-full md:pr-8  border-l-2 pl-4 py-2  hover:bg-custom-light-gray mr-10`,
             selected ? 'border-custom-green bg-blue' : 'border-custom-light-gray'
         )} >
-            {title}
+            {/* <RoundedIcon icon={icon} color={color} size="xs" /> */}
+            <div>
+                {title}
+            </div>
         </div>
     )
 }

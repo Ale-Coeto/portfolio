@@ -8,14 +8,10 @@ import emailjs from "@emailjs/browser";
 import Divider from "../components/Divider";
 import Footer from "../components/Contact/Footer";
 
-
-
-
-
 const Contact = () => {
 
     const [isLoading, setIsLoading] = useState(false);
-    const { register, handleSubmit, formState: { errors } } = useForm<FieldValues>({
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<FieldValues>({
         defaultValues: {
             name: '',
             email: '',
@@ -44,6 +40,7 @@ const Contact = () => {
             emailjs.send(service, template, templateParams, publicKey)
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
+                    reset(); 
                 }, (error) => {
                     console.log('FAILED...', error);
                 }).then((res) => {
