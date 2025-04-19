@@ -16,13 +16,13 @@ const usePLanguages = () => {
         {
             icon: '/images/icons/Python.png',
             name: 'Python',
-            time: '3 years',
+            time: '4 years',
             level: 50
         },
         {
             icon: '/images/icons/Typescript.png',
             name: 'Typescript',
-            time: '2 years',
+            time: '3 years',
             level: 50
         },
         {
@@ -34,7 +34,7 @@ const usePLanguages = () => {
         {
             icon: '/images/icons/Swift.png',
             name: 'Swift',
-            time: '1 year',
+            time: '2 years',
             level: 80
         },
         {
