@@ -2,6 +2,14 @@
 const useProjects = () => {
     const projects = [
         {
+            title: 'HowlX',
+            description: 'AI platform (web+iOS app) that analyzes customer conversations in real time for transcription, emotion detection, and insights.',
+            tools: "React, Python, Swift, Docker, FastAPI, tRPC",
+            image: '/images/projects/Howl.png',
+            href: 'https://github.com/SantiagoDlrr/howl',
+            categories: ["Favorite", "Web", "AI", "Mobile"]
+        },
+        {
             title: 'Swift Student Challenge 2025',
             description: 'App that provide tools for visually impaired people: colorblind mode to distinguish colored routes and guide mode to provide real-time audio guidance.\n Winner 2025!',
             tools: "Swift, Vision, CreateML/CoreML, AVFoundation, Core Image, Combine, UIKit, Roboflow, XCode",
