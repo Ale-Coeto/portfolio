@@ -4,7 +4,7 @@ const usePLanguages = () => {
         {
             icon: '/images/icons/Java.png',
             name: 'Java',
-            time: '4 years',
+            time: '5 years',
             level: 80
         },
         {
