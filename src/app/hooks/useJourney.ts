@@ -1,6 +1,14 @@
 const useJourney = () => {
     const journey = [
         {
+            title: 'Robocup @Home - Brasil',
+            description: 'Competed in the International Robocup competition.',
+            date: 'Jul 2025',
+            place: ["6th International"],
+            image: '/images/journey/Robocup2025.jpg',
+            href: 'https://2025.robocup.org/',
+        },
+        {
             title: 'ICPC Mexico National Finals',
             description: 'Competed in the Mexico Finals of the ICPC competitive programming competition.',
             date: 'Nov 2024',
