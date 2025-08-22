@@ -11,6 +11,9 @@ const useJourney = () => {
       href: "https://2025.robocup.org/",
     },
     // {
+    //     title: "SWE Internship",
+    // },
+    // {
     //   title: "Swift Student Challenge (WWDC 2025)",
     //   description:
     //     "Recognized by Apple as Swift Student Challenge winner and attended WWDC.",
