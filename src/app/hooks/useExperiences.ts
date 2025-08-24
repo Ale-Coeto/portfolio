@@ -1,4 +1,7 @@
 const useExperiences = () => {
+    // TODO: Allow different experiences for each company
+    // TODO: Add location for each experience
+    // TODO: Improve journey scroll
   const work = [
     {
       title: "Google",
@@ -15,6 +18,7 @@ const useExperiences = () => {
       icon: "/images/logos/Google.jpeg",
       iconColor: "black",
     },
+    //TODO: Update Oracle bullets
     {
       title: "Oracle",
       position: "Software Engineering Intern",
