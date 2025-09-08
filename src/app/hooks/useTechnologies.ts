@@ -7,6 +7,18 @@ const useTechnologies = () => {
             level: 60
         },
         {
+            icon: '/images/icons/Docker.png',
+            name: 'Docker',
+            time: '',
+            level: 50
+        },
+        {
+            icon: '/images/icons/Kubernetes.png',
+            name: 'Kubernetes',
+            time: '',
+            level: 60
+        },
+        {
             icon: '/images/icons/HTML.png',
             name: 'HTML',
             time: '',
@@ -29,12 +41,6 @@ const useTechnologies = () => {
             name: 'Tailwind',
             time: '',
             level: 60
-        },
-        {
-            icon: '/images/icons/Docker.png',
-            name: 'Docker',
-            time: '',
-            level: 50
         },
         {
             icon: '/images/icons/ROS1.png',
