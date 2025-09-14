@@ -19,11 +19,11 @@ const
                 )}
 
                 <div className="w-full flex flex-col">
-                    <div className="font-semibold">
+                    <div className="font-semibold underline decoration-sky-500 underline-offset-2 decoration-1">
                         {title}
                     </div>
 
-                    <div className="pb-2 text-sm md:visible md:h-auto invisible h-0 ">
+                    <div className="pb-2 text-sm md:visible md:h-auto invisible h-0">
                         {description}
                     </div>
                     {places && (

@@ -124,7 +124,7 @@ const useJourney = () => {
       title: "Hackathon Caterpillar",
       description:
         "Developed a smart shower prototype to optimize water consumption. Interviewed with Bar Emprende, summarized in the magazine MIT Sloan Management Review.",
-      place: ["1st"],
+      place: ["1st place"],
       image: "/images/journey/Caterpillar2.png",
       date: "Jul 2022",
       href: "https://www.firstinspires.org/robotics/frc",

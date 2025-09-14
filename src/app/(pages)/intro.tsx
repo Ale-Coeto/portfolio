@@ -1,8 +1,10 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Tag from "../components/Contact/Tag";
 import { FaEnvelope } from "react-icons/fa";
+import TypeWriter from "../components/Typewriter";
 
 const intro = () => {
+    
     return (
         <div id="home" className=" m-0 md:h-[88vh] max-md:py-48 flex flex-col justify-center">
             <div className="">
@@ -14,9 +16,7 @@ const intro = () => {
                     Alejandra Coeto
                 </div>
 
-                <div className="pt-2 text-lg sm:text-xl font-fira-code text-custom-text-dark-gray mb-8" >
-                    &#60;Software Developer /&#62;
-                </div>
+                <TypeWriter />
                 <div className="flex flex-row items-center gap-3">
                     <a href="/pdfs/Resume.pdf" target="_blank">
                         <button className=" bg-sky-500 rounded-full px-4 py-1 text-base font-nunito text-custom-dark-gray font-semibold">
