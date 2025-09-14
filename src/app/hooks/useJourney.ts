@@ -1,5 +1,3 @@
-import { title } from "process";
-
 const useJourney = () => {
   const journey = [
     {
@@ -10,22 +8,27 @@ const useJourney = () => {
       image: "/images/journey/Robocup2025.jpg",
       href: "https://2025.robocup.org/",
     },
-    // {
-    //     title: "SWE Internship",
-    // },
-    // {
-    //   title: "Swift Student Challenge (WWDC 2025)",
-    //   description:
-    //     "Recognized by Apple as Swift Student Challenge winner and attended WWDC.",
-    //   date: "June 2025",
-    //   image: "",
-    // },
-    // {
-    //     title: "Howl"
-    // },
-    // {
-    //     title: "TMR"
-    // },
+    {
+      title: "Swift Student Challenge (WWDC 2025)",
+      description:
+        "Recognized by Apple as Swift Student Challenge winner and attended Worldwide Developers Conference 2025.",
+      date: "Jun 2025",
+      image: "/images/journey/WWDC25.jpg",
+    },
+    {
+      title: "SWE Internship",
+      description: "Google SWE Intern in the Ads Team.",
+      date: "Jun 2025",
+      image: "/images/journey/Google2025.png",
+    },
+    {
+      title: "Robocup @Home - TMR",
+      description:
+        "Competed in the Mexican Robotics Tournament (TMR). Led vision team and member of the integration team.",
+      date: "May 2025",
+      place: ["2nd National"],
+      image: "/images/journey/Home2025.jpg",
+    },
     {
       title: "ICPC Mexico National Finals",
       description:
@@ -56,6 +59,7 @@ const useJourney = () => {
       description:
         "Recognized as part of the top 1% of distinguished students in the School of Engineering at ITESM.",
       date: "Sept 2024",
+      image: "/images/journey/EIC24.png",
     },
     {
       title: "STEP Internship",
@@ -72,9 +76,9 @@ const useJourney = () => {
       image: "/images/journey/Apple.jpg",
     },
     {
-      title: "RoboCup@Home",
+      title: "RoboCup@Home - TMR",
       description:
-        "Developed computer vision algorithms for a general purpose service robot, competing in the Mexican Robotics Tournament.",
+        "Developed computer vision algorithms for a general purpose service robot, competing in the Mexican Robotics Tournament (TMR).",
       place: ["2nd National"],
       date: "Apr 2024",
       image: "/images/journey/Home.jpeg",
@@ -115,7 +119,6 @@ const useJourney = () => {
       description:
         "Recognized as part of the top 1% of distinguished students in the School of Engineering at ITESM.",
       date: "Apr 2023",
-      href: "https://www.robocup.org/leagues/18",
     },
     {
       title: "Hackathon Caterpillar",
