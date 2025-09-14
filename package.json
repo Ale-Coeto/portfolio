@@ -21,6 +21,7 @@
     "emailjs-com": "^3.2.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.8",
+    "framer-motion": "^12.23.12",
     "next": "^15.5.3",
     "postcss": "^8.5.6",
     "react": "18.2.0",
@@ -28,6 +29,7 @@
     "react-hook-form": "^7.46.1",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.10.1",
+    "react-intersection-observer": "^9.16.0",
     "react-scroll": "^1.8.9",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"

@@ -6,7 +6,7 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ title, number }) => {
     return (
-        <div className="flex tracking-normal pb-0 my-10">
+        <div className="flex tracking-normal pb-0 my-10 z-50">
             <span
                 className="
                     text-3xl

@@ -11,39 +11,30 @@ const
     JourneyEvent = ({ title, description, date, image, href, places }: EventProps) => {
 
         return (
-            <div className="flex flex-row ">
-                <div className=" flex flex-row gap-6 justify-left items-center md:pl-28 relative">
-                    <div className="font-fira-code text-sm text-custom-text-dark-gray absolute md:-translate-x-28 md:-translate-y-0 -translate-y-16 translate-x-10">
-                        {date}
+            <div className="flex flex-row gap-4 md:gap-8 pl-16 md:pl-20 items-center h-36 w-full mr-4 md:mr-0">
+                {image && (
+                    <div className="h-32 flex items-center justify-center">
+                        <img src={image} alt="Event" className="h-full w-auto object-contain" />
                     </div>
-                    <div className="flex flex-col justify-center items-center ">
-                        <div className="h-20 border-l w-0 border-custom-text-gray" />
-                        <div className={`border h-4 w-4 border-white rounded-full  ${places ? 'bg-sky-500' : 'bg-custom-green'}`} />
-                        <div className="h-20 border-l w-0 border-custom-text-gray" />
-                    </div>
-                    <div className="flex flex-row gap-4 items-center">
-                        <div className="">
-                            <img className="h-20 hover:h-40 transition-all duration-200 object-cover" src={image} />
-                        </div>
-                        <div className="md:pr-28">
-                            <div className="font-semibold">
-                                {title}
-                            </div>
+                )}
 
-                            <div className="pb-2 text-sm md:visible md:h-auto invisible h-0 ">
-                                {description}
-                            </div>
-                            {places && (
-                                <div className="flex flex-wrap gap-2">
-                                    {places.map((place, key) => (
-                                        <div className="bg-custom-light-gray px-2 py-1 text-xs rounded-xl" key={key}>
-                                            {place}
-                                        </div>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
+                <div className="w-full flex flex-col">
+                    <div className="font-semibold">
+                        {title}
                     </div>
+
+                    <div className="pb-2 text-sm md:visible md:h-auto invisible h-0 ">
+                        {description}
+                    </div>
+                    {places && (
+                        <div className="flex flex-wrap gap-2">
+                            {places.map((place, key) => (
+                                <div className="bg-custom-light-gray px-2 py-1 text-xs rounded-xl" key={key}>
+                                    {place}
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         )

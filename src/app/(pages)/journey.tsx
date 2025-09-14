@@ -2,28 +2,29 @@ import JourneyEvent from "@/app/components/Journey/Event"
 import useJourney from "@/app/hooks/useJourney"
 import EndLines from "@/app/components/Journey/EndLines"
 import Title from "../components/Title"
-
+import TimelineEvent from "../components/Journey/TimelineEvent"
+import Timeline from "../components/Journey/Timeline"
+import React, { useRef } from "react";
+import GoToContactButton from "../components/Journey/GoToContactButton"
 
 const Journey = () => {
-    const journey = useJourney();
 
     return (
 
-        <div id="journey">
-            <Title number="04." title="My Journey" />
-
-            <div className="invisible md:visible absolute bg-custom-light-gray p-2 rounded-md text-sm">
-                <LegendItem label="Competitions" color="bg-sky-500" />
-                <LegendItem label="Events" color="bg-custom-green" />
+        <div id="journey" className="flex flex-col">
+            <div className="sticky top-20 z-50">
+                <Title number="04." title="My Journey" />
+                <div className="invisible md:visible absolute bg-custom-light-gray p-2 rounded-md text-sm">
+                    <LegendItem label="Competition" color="bg-sky-500" />
+                    <LegendItem label="Event" color="bg-custom-green" />
+                </div>
             </div>
 
-            <div className="md:translate-x-1/4 md:w-4/5 flex flex-col justify-start  h-[70vh] overflow-y-scroll">
-                <EndLines top={true} />
-                {journey.map((event, key) => (
-                    <JourneyEvent key={key} title={event.title} description={event.description} date={event.date} image={event.image} href={event.href} places={event.place} />
-                ))}
-                <EndLines />
+            <Timeline />
+            <div className="sticky bottom-10 flex flex-row justify-center md:justify-end items-center z-50">
+                <GoToContactButton />
             </div>
+
         </div>
 
     )
