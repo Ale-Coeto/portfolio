@@ -27,7 +27,7 @@ const usePLanguages = () => {
     {
       icon: "/images/icons/Javascript.png",
       name: "JavaScript",
-      time: "1 year",
+      time: "3 year",
       level: 50,
     },
     {
@@ -37,16 +37,16 @@ const usePLanguages = () => {
       level: 80,
     },
     {
+        icon: "/images/icons/Dart.png",
+        name: "Dart",
+        time: "< 1 year",
+        level: 60,
+    },
+    {
       icon: "/images/icons/Matlab.png",
       name: "Matlab",
       time: "< 1 year",
       level: 80,
-    },
-    {
-      icon: "/images/icons/Dart.png",
-      name: "Dart",
-      time: "< 1 year",
-      level: 60,
     },
   ];
 
