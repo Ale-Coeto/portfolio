@@ -5,6 +5,7 @@ import { FaMinus } from "react-icons/fa"
 import { BsPlus } from "react-icons/bs"
 import { useEffect, useState } from "react"
 import { tags, tags_bg } from "@/app/Utils/tags"
+import { motion } from "framer-motion";
 
 interface ProjectGridProps {
     items: {
@@ -60,22 +61,36 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
     return (
         <div className="md:px-10 text-sm">
             {show_categories && (
-                <div className="flex flex-row justify-start md:justify-center flex-wrap gap-2 mb-5">
+                <motion.div
+                className="leading-tight"
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+            >
+               <div className="flex flex-row justify-start md:justify-center flex-wrap gap-2 mb-5">
                     {tags_name.map((tag, key) => (
                         <div key={key} onClick={() => handleClick(tag)} className={clsx(
                             'inline-block px-2 py-1 rounded-md mr-2 text-xs hover:underline hover:cursor-pointer',
                             tag && selectedTags.has(tag) ? tags_bg.get(tag) : '',
                             tag && selectedTags.has(tag) == false ? tags.get(tag) : '',
-                            animating ? 'animate-fade-in' : 'animate-fade-out'
                         )}>
                             {tag}
                         </div>
                     ))}
                 </div>
+            </motion.div>
+                
             )}
             {all ?
                 (
-                    <div>
+                    <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        style={{ overflow: "hidden" }}
+                    >
                         <div className={clsx('grid gap-6',
                             short && `lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4`,
                             !short && `sm:grid-cols-1 md:grid-cols-2 2xl:grid-cols-3`
@@ -86,7 +101,6 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
                                 (item.categories && item.categories.some(tag => selectedTags.has(tag)))
                             )
                                 .slice(0, VIEW_LIMIT).map((item, key) => (
-                                    //check if the item has the selected tags
                                     <ProjectElement key={key} title={item.title} description={item.description} image={item.image} href={item.href} tools={item.tools} place={item.place} categories={item.categories} />
                                 ))}
                         </div>
@@ -101,7 +115,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
                                     </div>
                                 </button>
                             )}
-                    </div>
+                    </motion.div>
                 )
                 :
                 <div>

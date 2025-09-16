@@ -1,7 +1,6 @@
 const useExperiences = () => {
-    // TODO: Allow different experiences for each company
-    // TODO: Add location for each experience
-    // TODO: Improve journey scroll
+  // TODO: Allow different experiences for each company
+  // TODO: Add location for each experience
   const work = [
     {
       title: "Google",
@@ -17,17 +16,22 @@ const useExperiences = () => {
       images: [],
       icon: "/images/logos/Google.jpeg",
       iconColor: "black",
+      location: "Mountain View, CA",
     },
-    //TODO: Update Oracle bullets
     {
       title: "Oracle",
       position: "Software Engineering Intern",
       date: "Feb 2025 - Present",
-      info: "Part time SWE intern of the 5G Networks team.",
-      bullets: ["Working with backend micro-services."],
+      info: "SWE intern in the 5G Networks team.",
+      bullets: [
+        "Worked in backend micro-services development.",
+        "Manged infrastructure with Kubernetes, Docker and Java.",
+        "Resolved bugs and collaborated in an Agile environment.",
+      ],
       images: [],
       icon: "/images/logos/Oracle.png",
       iconColor: "white",
+      location: "Mexico",
     },
     {
       title: "Google",
@@ -41,6 +45,7 @@ const useExperiences = () => {
       images: [],
       icon: "/images/logos/Google.jpeg",
       iconColor: "black",
+      location: "Sunnyvale, CA",
     },
     {
       title: "ITESM",
@@ -55,6 +60,7 @@ const useExperiences = () => {
       images: [],
       icon: "/images/logos/Tec.png",
       iconColor: "white",
+      location: "Mexico",
     },
   ];
 
