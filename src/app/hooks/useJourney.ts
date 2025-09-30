@@ -13,7 +13,7 @@ const useJourney = () => {
       description:
         "Recognized by Apple as Swift Student Challenge winner and attended Worldwide Developers Conference 2025.",
       date: "Jun 2025",
-      image: "/images/journey/WWDC25.jpg",
+      image: "/images/journey/WWDC25.JPG",
     },
     {
       title: "SWE Internship",
