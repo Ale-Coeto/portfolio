@@ -37,6 +37,12 @@ const usePLanguages = () => {
       level: 80,
     },
     {
+        icon: "/images/icons/Go.png",
+        name: "Go",
+        time: "< 1 year",
+        level: 40,
+    },
+    {
         icon: "/images/icons/Dart.png",
         name: "Dart",
         time: "< 1 year",
