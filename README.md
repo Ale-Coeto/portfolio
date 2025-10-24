@@ -1,7 +1,9 @@
 ## Portfolio
+
 This is my portfolio website, where I share some projects and experiences regarding my journey as a software developer.
 
 ## Languages and Tools
+
 <img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://skillicons.dev/icons?i=typescript" />
 
 [TypeScript](https://www.typescriptlang.org/)
@@ -18,10 +20,21 @@ This is my portfolio website, where I share some projects and experiences regard
 
 [Next.js](https://nextjs.org/)
 
-  
 Deployed with
 <img align="left" alt="Vercel" width="30px" style="padding-right:10px;" src="https://skillicons.dev/icons?i=vercel" />
 [Vercel](https://vercel.com/)
 
 ## URL
+
 https://alecoeto-portfolio.vercel.app/
+
+<!-- # TODO
+
+- Add wedding invitations project
+- Add gala borrego in journey
+- Msoft experience
+- Msoft Experience in journey
+- ICPC in journey
+- Leadership -> SEITC
+
+-->

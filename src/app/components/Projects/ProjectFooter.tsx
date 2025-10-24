@@ -27,7 +27,7 @@ const ProjectFooter: React.FC<ProjectFooterProps> = ({ tools, place, categories 
 
 
             {categories?.map((item, key) => (
-                <div key={key} className={clsx('inline-block px-2 py-1 rounded-md mr-2 text-xs ', tags.get(item))}>
+                <div key={key} className={clsx('inline-block px-2 py-1 mb-2 rounded-md mr-2 text-xs ', tags.get(item))}>
                     {item}
                 </div>
             ))}
