@@ -3,6 +3,21 @@ const useExperiences = () => {
   // TODO: Add location for each experience
   const work = [
     {
+      title: "Microsoft",
+      position: "Software Engineering Intern",
+      date: "Sept 2025 - Dec 2025",
+      info: "Microsoft SWE intern in the Azure Cosmic team.",
+      bullets: [
+        "Onboarded 17 build pipelines into Azure Build Health for monitoring. Developed YAML templates to publish test results with metadata",
+        "Increased test coverage for a deployment http application by adding Go unit test cases.",
+        "Developing a Custom Resource Definition to automatically handle qutota requests using Go and Kubernetes.",
+      ],
+      images: [],
+      icon: "/images/logos/Microsoft.png",
+      iconColor: "white",
+      location: "Redmond, WA",
+    },
+    {
       title: "Google",
       position: "Software Engineering Intern",
       date: "Jun 2025 - Aug 2025",

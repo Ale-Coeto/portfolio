@@ -16,7 +16,7 @@ const RoundedIcon: React.FC<RoundedIconProps> = ({ icon, color, size }) => {
 
     return (
         <div
-            className={clsx(`relative  inline-block  rounded-full  overflow-hidden border-2 border-solid border-gray-100`,
+            className={clsx(`relative  inline-block  rounded-full  overflow-hidden border-solid border-gray-100`,
                 color == 'blue' && 'bg-blue-900',
                 color == 'black' && 'bg-gray-900',
                 color == 'white' && 'bg-white',
@@ -24,7 +24,8 @@ const RoundedIcon: React.FC<RoundedIconProps> = ({ icon, color, size }) => {
                 !size && 'h-12 w-12 mr-3',
                 size == 'xl' && 'h-16 w-16 p-0',
                 size == 'sm' && 'h-8 w-8',
-                size == 'xs' && 'h-7 w-7 p-0',
+                size == 'xs' && 'h-6 w-6 p-0 border',
+                size != 'xs' && ' border-2',
                 // loading && 'animate-pulse',
             )}
         >

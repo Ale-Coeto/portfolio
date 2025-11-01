@@ -41,6 +41,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ items }) => {
             <div className={clsx(open && 'invisible h-0 md:h-auto md:visible', "visible flex md:flex-col flex-col justify-start whitespace-nowrap md:mb-2 mb-8 left-0 mt-4 md:mr-20")}>
                 {items.map((item, key) => (
                     <div key={key} onClick={() => handleSelect(key)}>
+                        {/* // <div className={clsx(key !== items.length - 1 && "border-b border-custom-light-gray")} key={key} onClick={() => handleSelect(key)}> */}
                         <MenuElement title={item.title} selected={key == selected} color={item.iconColor} icon={item.icon} />
                     </div>
                 ))}
