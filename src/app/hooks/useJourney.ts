@@ -1,6 +1,12 @@
 const useJourney = () => {
   const journey = [
     {
+      title: "SWE Internship",
+      description: "Microsoft SWE Intern in the Azure Team.",
+      date: "Sept 2025",
+      image: "/images/journey/Msoft2025.JPG",
+    },
+    {
       title: "Robocup @Home - Brasil",
       description: "Competed in the International Robocup competition.",
       date: "Jul 2025",
