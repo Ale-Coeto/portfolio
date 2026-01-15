@@ -1,8 +1,14 @@
 const useJourney = () => {
   const journey = [
     {
-      title: "SWE Internship",
-      description: "Microsoft SWE Intern in the Azure Team.",
+      title: "Gala Borrego Award",
+      description: "Received award for Best Student in Academic Engagement.",
+      date: "Oct 2025",
+      image: "/images/journey/GalaBorrego.jpg",
+    },
+    {
+      title: "SWE Internship @Microsoft",
+      description: "SWE Intern in the Azure Team.",
       date: "Sept 2025",
       image: "/images/journey/Msoft2025.JPG",
     },
@@ -22,8 +28,8 @@ const useJourney = () => {
       image: "/images/journey/WWDC25.JPG",
     },
     {
-      title: "SWE Internship",
-      description: "Google SWE Intern in the Ads Team.",
+      title: "SWE Internship @Google",
+      description: "SWE Intern in the Ads Team.",
       date: "Jun 2025",
       image: "/images/journey/Google2025.png",
     },
@@ -68,8 +74,8 @@ const useJourney = () => {
       image: "/images/journey/EIC24.png",
     },
     {
-      title: "STEP Internship",
-      description: "Google STEP Internship for software engineering.",
+      title: "STEP Internship @Google",
+      description: "STEP intern for software engineering at Google Cloud.",
       date: "Jun 2024",
       image: "/images/journey/Google.png",
       href: "https://github.com/RoBorregos/home",
