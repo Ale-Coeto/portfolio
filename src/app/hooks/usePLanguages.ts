@@ -9,32 +9,38 @@ const usePLanguages = () => {
     {
       icon: "/images/icons/C++.png",
       name: "C++",
-      time: "4 years",
+      time: "5 years",
       level: 60,
     },
     {
       icon: "/images/icons/Python.png",
       name: "Python",
-      time: "4 years",
+      time: "5 years",
       level: 50,
     },
     {
       icon: "/images/icons/Typescript.png",
       name: "Typescript",
-      time: "3 years",
+      time: "4 years",
       level: 50,
     },
     {
       icon: "/images/icons/Javascript.png",
       name: "JavaScript",
-      time: "3 year",
+      time: "4 years",
       level: 50,
     },
     {
       icon: "/images/icons/Swift.png",
       name: "Swift",
-      time: "2 years",
+      time: "3 years",
       level: 80,
+    },
+    {
+      icon: "/images/icons/Rust.png",
+      name: "Rust",
+      time: "< 1 year",
+      level: 60,
     },
     {
         icon: "/images/icons/Go.png",

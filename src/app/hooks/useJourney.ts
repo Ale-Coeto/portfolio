@@ -1,6 +1,28 @@
 const useJourney = () => {
   const journey = [
     {
+      title: "BS in Computer Science and Technology - ITESM",
+      description:
+        "Received degree in Computer Science and Technology. Graduated with outstanding honors for academic performance.",
+      date: "Jul 2026",
+      image: "/images/journey/itc.jpeg",
+    },
+    {
+      title: "Top Excellence Award - Engineering Awards",
+      description:
+        "Recognized as one of the top 3 students in Engineering, top 1% grade averages and top 1% trajectory in the School of Engineering at ITESM.",
+      date: "Jun 2026",
+      image: "/images/journey/EngAwards.jpeg",
+    },
+    {
+      title: "Robocup @Home - TMR",
+      description:
+        "Competed in the Mexican Robotics Tournament (TMR) as part of the vision team.",
+      date: "Apr 2026",
+      place: ["1st National"],
+      image: "/images/journey/Robocup2026.jpeg",
+    },
+    {
       title: "Gala Borrego Award",
       description: "Received award for Best Student in Academic Engagement.",
       date: "Oct 2025",
@@ -10,7 +32,7 @@ const useJourney = () => {
       title: "SWE Internship @Microsoft",
       description: "SWE Intern in the Azure Team.",
       date: "Sept 2025",
-      image: "/images/journey/Msoft2025.JPG",
+      image: "/images/journey/Msoft.jpeg",
     },
     {
       title: "Robocup @Home - Brasil",
@@ -131,6 +153,7 @@ const useJourney = () => {
       description:
         "Recognized as part of the top 1% of distinguished students in the School of Engineering at ITESM.",
       date: "Apr 2023",
+      image: "/images/journey/EIC23.jpeg",
     },
     {
       title: "Hackathon Caterpillar",
@@ -171,7 +194,7 @@ const useJourney = () => {
     {
       title: "World Robot Olympiad",
       description:
-        "Programmed and built the robot with my team for the WRO competitions in 2017 and 2018.",
+        "Build and programmed a LEGO robot with my team for the WRO competitions in 2017 and 2018.",
       tools: "LEGO Mindstorms",
       place: ["4th Regional", "5th National"],
       date: "Sept 2018",

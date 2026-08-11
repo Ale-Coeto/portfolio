@@ -1,10 +1,19 @@
 const useProjects = () => {
   const projects = [
     {
+      title: "Makrio",
+      description:
+        "iOS app to track macronutrients and calories through smart meal logging, a built-in food recipe management.",
+      tools: "Swift, SwiftData, FoundationModels, Vision, Swift Charts",
+      image: "/images/projects/Makrio.png",
+      href: "https://makrio.coeto.dev",
+      categories: ["Mobile"],
+    },
+    {
       title: "Wedding invitation",
       description:
-        "Personalized wedding invitations for each guest. Allows them to confirm assistance with admin page available.",
-      tools: "NextJs, tRPC",
+        "WebApp to create personalized wedding invitations for each guest. Allows them to confirm assistance with admin page available.",
+      tools: "NextJs, tRPC, TailwindCSS, Prisma, PostgreSQL",
       image: "/images/projects/Wedding.png",
       href: "https://github.com/Ale-Coeto/wedding-invitation",
       categories: ["Web"],
@@ -17,6 +26,24 @@ const useProjects = () => {
       image: "/images/projects/Howl.png",
       href: "https://github.com/SantiagoDlrr/howl",
       categories: ["Favorite", "Web", "AI", "Mobile"],
+    },
+    {
+      title: "Patito Compiler",
+      description:
+        "Simple compiler for 'Lenguaje Patito', a custom language. Implements lexical analysis, parsing, semantic checks and code generation.",
+      tools: "Rust, Cargo, Logos, LALRPOP",
+      image: "/images/projects/Compiler.png",
+      href: "https://github.com/Ale-Coeto/TC3002B-compiladores",
+      categories: ["CS"],
+    },
+    {
+      title: "Emotions and Concentration",
+      description:
+        "Research to analyze the impact of emotions on concentration levels using Machine Learning models.",
+      tools: "Python, Scikit-learn, Pandas, Matplotlib, ML",
+      image: "/images/projects/research/IFE.png",
+      href: "/pdfs/IFE.pdf",
+      categories: ["Research", "AI"],
     },
     {
       title: "Swift Student Challenge 2025",

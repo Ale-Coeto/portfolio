@@ -18,7 +18,7 @@ const GoToContactButton = ({ atBottom }: { atBottom: boolean }) => {
                 <IoIosArrowDown />
             }
             <div>
-                {atBottom ? "Restart journey" : "Skip to Contact"}
+                {atBottom ? "Back to top" : "Skip to Contact"}
             </div>
         </button>
     )

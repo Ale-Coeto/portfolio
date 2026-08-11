@@ -10,6 +10,7 @@ export const tags = new Map<string, string>([
     ["Desktop", "border border-rose-500 text-rose-500"],
     ["Robotics", "border border-purple-400 text-purple-400"],
     ["Research", "border border-slate-400 text-slate-400"],
+    ["CS", "border border-violet-500 text-violet-500"],
 ]);
 
 export const tags_bg = new Map<string, string>([
@@ -23,5 +24,6 @@ export const tags_bg = new Map<string, string>([
     ["Desktop", "bg-rose-500"],
     ["Robotics", "bg-purple-400"],
     ["Research", "bg-slate-400"],
+    ["CS", "bg-violet-500"],
 ]);
 
