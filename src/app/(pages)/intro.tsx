@@ -2,12 +2,16 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Tag from "../components/Contact/Tag";
 import { FaEnvelope } from "react-icons/fa";
 import TypeWriter from "../components/Typewriter";
+import Image from "next/image";
 
 const intro = () => {
-    
+
     return (
         <div id="home" className=" m-0 md:h-[88vh] max-md:py-48 flex flex-col justify-center">
             <div className="">
+                {/* <div className="pb-32 -translate-x-2">
+                    <Image src="/icon.png" alt="Logo" width={60} height={60} className="rounded-full" />
+                </div> */}
                 <div>
                     Hi, I&apos;m
                 </div>
@@ -16,7 +20,7 @@ const intro = () => {
                     Alejandra Coeto
                 </div>
 
-                <TypeWriter />
+                <TypeWriter delay={2300} />
                 <div className="flex flex-row items-center gap-3">
                     <a href="/pdfs/Resume.pdf" target="_blank">
                         <button className=" bg-sky-500 rounded-full px-4 py-1 text-base font-nunito text-custom-dark-gray font-semibold">

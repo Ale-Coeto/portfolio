@@ -1,23 +1,29 @@
 "use client";
 import { useEffect, useState } from "react";
 
-function useTypewriter(text: string, speed = 80) {
+function useTypewriter(text: string, speed = 80, delay = 0) {
     const [displayed, setDisplayed] = useState("");
     useEffect(() => {
-        let i = 0;
-        const interval = setInterval(() => {
-            setDisplayed(text.slice(0, i + 1));
-            i++;
-            if (i === text.length) clearInterval(interval);
-        }, speed);
-        return () => clearInterval(interval);
-    }, [text, speed]);
+        let interval: ReturnType<typeof setInterval>;
+        const timeout = setTimeout(() => {
+            let i = 0;
+            interval = setInterval(() => {
+                setDisplayed(text.slice(0, i + 1));
+                i++;
+                if (i === text.length) clearInterval(interval);
+            }, speed);
+        }, delay);
+        return () => {
+            clearTimeout(timeout);
+            clearInterval(interval);
+        };
+    }, [text, speed, delay]);
     return displayed;
 }
 
 
-const TypeWriter = () => {
-    const typewriterText = useTypewriter("<Software Developer />", 80);
+const TypeWriter = ({ delay = 0 }: { delay?: number }) => {
+    const typewriterText = useTypewriter("<Software Developer />", 80, delay);
     const [showCursor, setShowCursor] = useState(true);
 
     useEffect(() => {

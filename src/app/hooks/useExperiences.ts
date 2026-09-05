@@ -83,7 +83,7 @@ const useExperiences = () => {
     {
       title: "Roborregos",
       position: "President and Software Developer",
-      date: "Dec 2022 - Present",
+      date: "Dec 2022 - June 2026",
       info: "Software developer and president of the representative Robotics Team from Tecnológico de Monterrey.",
       bullets: [
         "Competed in regional, national and international robotics tournaments representing ITESM.",

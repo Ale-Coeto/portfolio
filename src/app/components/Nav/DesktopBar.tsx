@@ -2,6 +2,7 @@ import useRoutes from "@/app/hooks/useSections";
 import NavElement from "./NavElement";
 import { BsGithub } from "react-icons/bs";
 import { IoIosArrowUp } from "react-icons/io";
+import Image from "next/image";
 import Tag from "../Contact/Tag";
 
 const DesktopBar = () => {
@@ -9,15 +10,13 @@ const DesktopBar = () => {
 
     return (
         <div className="invisible  sm:visible">
-            <div className="fixed border-b z-50 w-full top-0 pt-1 h-16  drop-shadow-sm opacity-[0.97] backdrop-blur-lg" >
-                <nav className="flex justify-between flex-row mt-4 mx-8 text-white">
-                    <a href="#">
-                        <div className="rounded-md px-2 text-xl font-mono text-sky-500 ">
-                            ACS
-                        </div>
+            <div className="fixed border-b z-50 w-full top-0  drop-shadow-sm opacity-[0.97] backdrop-blur-lg" >
+                <nav className="flex justify-between flex-row my-2 mx-8 text-white">
+                    <a href="#" className="flex flex-row justify-between">
+                        <Image src="/logo2.png" alt="Logo" width={40} height={40} className="rounded-full" />
                     </a>
 
-                    <div className=" flex flex-row justify-between space-x-8">
+                    <div className=" flex flex-row items-center justify-between space-x-8">
                         {routes.map((item, key) => (
                             <NavElement key={key} num={item.num} label={item.label} href={item.href} />
                         ))}
