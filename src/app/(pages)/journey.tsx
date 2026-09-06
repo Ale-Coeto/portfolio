@@ -5,14 +5,16 @@ import EndLines from "@/app/components/Journey/EndLines"
 import Title from "../components/Title"
 import TimelineEvent from "../components/Journey/TimelineEvent"
 import Timeline from "../components/Journey/Timeline"
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import GoToContactButton from "../components/Journey/GoToContactButton"
 import { useInView } from "react-intersection-observer";
 
 const Journey = () => {
     const timelineRef = useRef<HTMLDivElement>(null);
-    // const [atBottom, setAtBottom] = useState(false);
     const { ref: visibleRef, inView: atBottom } = useInView({ threshold: 0.1 });
+    const [resetKey, setResetKey] = useState(0);
+
+    const handleBackToTop = () => setResetKey(k => k + 1);
 
     return (
 
@@ -24,10 +26,10 @@ const Journey = () => {
                     <LegendItem label="Event" color="bg-custom-green" />
                 </div>
             </div>
-            <Timeline />
+            <Timeline key={resetKey} />
             <div ref={visibleRef} className="h-16" />
             <div className="sticky bottom-10 flex flex-row justify-center md:justify-end items-center z-50">
-                <GoToContactButton atBottom={atBottom} />
+                <GoToContactButton atBottom={atBottom} onBackToTop={handleBackToTop} />
             </div>
         </div>
 

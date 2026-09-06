@@ -22,6 +22,7 @@ const IconGrid: React.FC<IconGridProps> = ({ title, items, size }) => {
                     size ? (
                         <TechElement
                             key={key}
+                            index={key}
                             name={item.name}
                             icon={item.icon}
                             time={item.time}
@@ -31,6 +32,7 @@ const IconGrid: React.FC<IconGridProps> = ({ title, items, size }) => {
                     ) : (
                         <IconElement
                             key={key}
+                            index={key}
                             name={item.name}
                             icon={item.icon}
                             time={item.time}
