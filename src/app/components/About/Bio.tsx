@@ -13,7 +13,7 @@ const Bio = () => {
                 viewport={{ once: true, amount: 0.6 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
             >
-                I&apos;m a Computer Science and Technology student at <span className={highlightClass}>Tecnológico de Monterrey</span>.
+                I&apos;m a Computer Science and Technology Engineer, graduated from <span className={highlightClass}>Tecnológico de Monterrey</span>.
                 Through my journey, I&apos;ve gained valuable experience through internships at <span className={highlightClass}>Google</span>, <span className={highlightClass}>Microsoft</span>, and <span className={highlightClass}>Oracle</span>.
                 I&apos;m also thankful to have served as president of the <span className={highlightClass}>Roborregos</span> robotics team, vice president of <span className={highlightClass}>Women in Technology</span>, and mentor for the FIRST robotics team <span className={highlightClass}>Voltec</span>.
                 I love facing new challenges and sharing my passion for robotics and programming with the community.
